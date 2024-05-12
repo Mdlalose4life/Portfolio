@@ -26,15 +26,15 @@ const Sidebar = () => {
                 <BiSmile className="icon"/>
                 About
             </a>
-            <a href='#' className="item">
+            <a href='/skills' className="item">
                 <BiAlignJustify className="icon"/>
                 Skills
             </a>
-            <a href='#' className="item">
+            <a href='/portfolio' className="item">
                 <BiBriefcase className="icon"/>
                 Portfolio
             </a>
-            <a href='#' className="item">
+            <a href='/contact' className="item">
                 <BiChat className="icon"/>
                 Contact
             </a>

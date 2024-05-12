@@ -1,0 +1,33 @@
+.main--profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile--container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile--image {
+  margin-bottom: 20px;
+}
+
+.image {
+  height: 340px;
+  width: 340px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.profile--name {
+  color: #526d82;
+  margin-top: 10px;
+}
+
+.icons{
+  display: flex;
+  gap: 90px;
+  font-size: 2rem;
+  padding-top: 20px;
+}
