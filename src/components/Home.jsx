@@ -30,25 +30,25 @@ const Home = () => {
                   preRenderFirstString={true}
                   sequence={[
                     500,
-                    'Crafting elegant solutions with Flask',
+                    'Crafting elegant solutions with Flask..',
                     1000,
-                    'Building robust applications with React',
+                    'Building robust applications with React..',
                     1000,
-                    'Delivering scalable solutions with Django',
+                    'Delivering scalable solutions with Django..',
                     1000,
-                    'Transforming ideas into code with Express',
+                    'Transforming ideas into code with Express..',
                     1000,
-                    'Debugging with finesse using Redux',
+                    'Debugging with finesse using Redux..',
                     500,
-                    'Mastering the art of database design',
+                    'Mastering the art of database design..',
                     1000,
-                    'Optimizing performance with SQL queries',
+                    'Optimizing performance with SQL queries..',
                     1000,
-                    'Harnessing the power of NoSQL databases',
+                    'Harnessing the power of NoSQL databases..',
                     1000,
-                    'Securing applications with OAuth',
+                    'Securing applications with OAuth..',
                     1000,
-                    'Automating tasks with Python scripts',
+                    'Automating tasks with Python scripts..',
                     500,
                   ]}
                   speed={50}
@@ -58,7 +58,7 @@ const Home = () => {
                 <div className='icons'>
                   <div className='linkedin--icon'>
                     <Link to={item.link} style={{ textDecoration: 'none', color: 'inherit'}}>
-                      <FaLinkedin />                    
+                      <FaLinkedin />               
                     </Link>
                   </div>
                   <div className='instagram--icon'>

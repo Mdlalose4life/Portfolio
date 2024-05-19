@@ -1,13 +1,23 @@
-.dashboard{
+.dashboard {
     display: flex;
     gap: 20px;
 }
-.dashboard--content{
+
+.dashboard--content {
     background: #E8EAF6;
     flex: 1;
     justify-content: center;
     border-radius: 20px;
+    min-height: 86vh;
     padding: 2rem;
     display: flex;
     gap: 1.5rem;
+    margin-left: 220px;
+    transition: margin-left 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .dashboard--content {
+        margin-left: 100px;
+    }
 }

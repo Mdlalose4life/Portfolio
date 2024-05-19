@@ -99,23 +99,25 @@ const About = () => {
                 </div>    
             </div>
             <div className='button--controller'>
-              <Button variant="contained" color="success">
-                  hire me
-              </Button>
+              <Link >
+                <Button variant="contained" color="success">
+                    hire me
+                </Button>
+              </Link>
             </div> 
           </div>     
           <div className='Gauges--controller'>
             <div className='C--gauge'>
               <PythonPointer />
-                C Programming (98%)
+                Python (98%)
             </div>
             <div className='python--gauge'>
               <SharpPoiner />
-                Python (96%)
+                Javascript (96%)
             </div>
             <div className='Java--gauge'>
               <ScriptGuge/>
-                Javascript (90%)
+                C# (90%)
             </div>
           </div>
         </div>

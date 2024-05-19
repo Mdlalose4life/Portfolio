@@ -1,46 +1,67 @@
-import React from 'react'
-import {
-    BiBook,
-    BiHome,
-    BiSmile,
-    BiAlignJustify ,
-    BiBriefcase,
-    BiChat,
-    }
-    from 'react-icons/bi'
-import "../styles/sidebar.css";
+import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
+import { BiHome, BiSmile, BiAlignJustify, BiBriefcase, BiChat, BiMenu } from 'react-icons/bi';
+import { LiaSmileBeamSolid } from 'react-icons/lia';
+import '../styles/sidebar.css';
 
 const Sidebar = () => {
-  return (
-    <div className='menu'>
-        <div className='logo'>
-            <BiBook className='icon-logo'/>
-            <h2> Sbusiso </h2>
-        </div>
-        <div className='menu--list'>
-            <a href='/' className="item">
-            <BiHome className="icon"/>
-                Home
-            </a>
-            <a href='/about' className="item">
-                <BiSmile className="icon"/>
-                About
-            </a>
-            <a href='/skills' className="item">
-                <BiAlignJustify className="icon"/>
-                Skills
-            </a>
-            <a href='/portfolio' className="item">
-                <BiBriefcase className="icon"/>
-                Portfolio
-            </a>
-            <a href='/contact' className="item">
-                <BiChat className="icon"/>
-                Contact
-            </a>
-        </div>
-    </div>
-  )
-}
+  const [isExpanded, setIsExpanded] = useState(true);
 
-export default Sidebar
+  const handleResize = () => {
+    if (window.innerWidth > 768) {
+      setIsExpanded(true);
+    } else {
+      setIsExpanded(false);
+    }
+  };
+
+  useEffect(() => {
+    handleResize(); // Set the initial state based on screen size
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const toggleSidebar = () => {
+    if (window.innerWidth <= 768) {
+      setIsExpanded(!isExpanded);
+    }
+  };
+
+  return (
+    <div className={`menu ${isExpanded ? 'expanded' : 'collapsed'}`}>
+      <button className="toggle-button" onClick={toggleSidebar}>
+        <BiMenu />
+      </button>
+      <div className='logo'>
+        <LiaSmileBeamSolid className='icon-logo' />
+        {isExpanded && <h2>Sbusiso</h2>}
+      </div>
+      <div className='menu--list'>
+        <NavLink to='/' className={({ isActive }) => isActive ? "item active" : "item"}>
+          <BiHome className="icon" />
+          {isExpanded && <span>Home</span>}
+        </NavLink>
+        <NavLink to='/about' className={({ isActive }) => isActive ? "item active" : "item"}>
+          <BiSmile className="icon" />
+          {isExpanded && <span>About</span>}
+        </NavLink>
+        <NavLink to='/skills' className={({ isActive }) => isActive ? "item active" : "item"}>
+          <BiAlignJustify className="icon" />
+          {isExpanded && <span>Skills</span>}
+        </NavLink>
+        <NavLink to='/portfolio' className={({ isActive }) => isActive ? "item active" : "item"}>
+          <BiBriefcase className="icon" />
+          {isExpanded && <span>Portfolio</span>}
+        </NavLink>
+        <NavLink to='/contact' className={({ isActive }) => isActive ? "item active" : "item"}>
+          <BiChat className="icon" />
+          {isExpanded && <span>Contact</span>}
+        </NavLink>
+      </div>
+    </div>
+  );
+};
+
+export default Sidebar;

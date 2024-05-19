@@ -1,10 +1,11 @@
 import React from 'react'
+import Divider from '@mui/material/Divider';
 import { Typography } from '@mui/material';
 import { CiDesktop } from "react-icons/ci";
 import { SiAzuredevops } from "react-icons/si";
 import { IoCodeSlashSharp  } from "react-icons/io5";
 import { FaDatabase } from "react-icons/fa6";
-import { SiFlask } from "react-icons/si";
+import { FaPhoenixFramework } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import '../styles/skills.css'
 
@@ -32,7 +33,7 @@ const skills = [
   },
   {
     title: 'Frameworks',
-    icons: <SiFlask/>,
+    icons: <FaPhoenixFramework />,
     des: 'Django, flask, React, .NET Framework and Express'
   },
   {
@@ -45,6 +46,7 @@ const Skills = () => {
   return (
     <div className='skills--page--tittle'>
       <Typography variant='h4'>Skills</Typography>
+      <Divider/>
     <div className='skills--container'>
       {skills.map((item) => (
         <div className="skills">

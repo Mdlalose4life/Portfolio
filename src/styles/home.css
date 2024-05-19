@@ -30,4 +30,5 @@
   gap: 90px;
   font-size: 2rem;
   padding-top: 20px;
+  transition: 0.10s ease-in-out;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Typography, List, ListItem, ListItemText } from '@mui/material';
 import spiritlink from '../assets/Spiritlink.png';
 import mindpal from '../assets/mindpal.png';
+import Divider from '@mui/material/Divider';
 import '../styles/Portfolio.css'
 import { Link } from 'react-router-dom';
 
@@ -21,7 +21,8 @@ const portfolio = [
 const Portfolio = () => {
   return (
     <div className='portfolio--page--tile'>
-      <Typography variant='h4'>Portfolio</Typography>
+      <h3>Portfolio</h3>
+      <Divider/>
       <div className='portfolio--container'>
         {portfolio.map((item) => (
           <div className='portfolio--card' key={item}>

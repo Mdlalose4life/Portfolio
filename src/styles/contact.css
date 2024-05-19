@@ -1,0 +1,84 @@
+/* contact.css */
+
+.contact--me--controller {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #526d82;
+  }
+  
+  .contact--me--title--controller {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact--and--icons--controller {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .icons--controller {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .icons--controller > div {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px); 
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .icons--controller .email--icon,
+  .icons--controller .phone--icon,
+  .icons--controller .location--icon,
+  .icons--controller .resume--icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icons--controller .email--text,
+  .icons--controller .phone--text,
+  .icons--controller .location--text,
+  .icons--controller .resume--text {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .icons--controller .email--name,
+  .icons--controller .kzn--text,
+  .icons--controller .new--text,
+  .icons--controller .click--text {
+    margin-top: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .icons--controller > div {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact--me--controller {
+      padding: 10px;
+    }
+  
+    .icons--controller {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .icons--controller > div {
+      padding: 10px;
+    }
+  }
+  
