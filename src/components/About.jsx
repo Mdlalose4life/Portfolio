@@ -55,7 +55,7 @@ const About = () => {
             <Typography variant='h6'>{item.AboutMeName}</Typography>
             <Divider />
             <div className='description--controller'>
-              {item.description}       
+              <p>{item.description}</p>    
             </div>
           </div>
         ))}
