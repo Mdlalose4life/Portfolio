@@ -1,8 +1,9 @@
-/* Cards containter */
-.skills--page--tittle{
+/* Cards container */
+.skills--page--tittle {
     color: #526d82;
 }
-.skills--container{
+
+.skills--container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -11,7 +12,7 @@
     align-items: flex-start;
 }
 
-.skills{
+.skills {
     flex: 3;
     flex: calc(33.333% - 20px);
     background: #C5CAE9;
@@ -25,11 +26,12 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.skills:hover{
+.skills:hover {
     transform: scale(1.04);
     cursor: pointer;
 }
-.skills--cover{
+
+.skills--cover {
     background: #fff;
     font-size: 3rem;
     display: flex;
@@ -40,7 +42,7 @@
     color: #969393;
 }
 
-.skills--title{
+.skills--title {
     background: #ffffffc0;
     width: 100%;
     text-align: center;
@@ -50,7 +52,25 @@
     border-radius: 10px;
 }
 
-.skills--dec{
-    align-items: center;
-    display: flex;
+.skills--description {
+    position: relative;
+    font-size: 14px;
+    color: #526d82;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.skills--description::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #C5CAE9;
+    transform: translateX(-50%);
 }

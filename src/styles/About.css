@@ -22,7 +22,7 @@
   line-height: 1.7;
   font-size: small;
   margin-bottom: 20px;
-  width: 96%;
+  width: 98%;
 }
 
 .about--me--card > hr {
@@ -121,7 +121,7 @@
   flex: 3;
   flex: calc(33.333% - 20px);
   display: flex;
-  gap: 40px;
+  gap: 50px;
   width: 100%;
 }
 

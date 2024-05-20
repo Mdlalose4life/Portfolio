@@ -3,22 +3,21 @@ import Divider from '@mui/material/Divider';
 import { Typography } from '@mui/material';
 import { CiDesktop } from "react-icons/ci";
 import { SiAzuredevops } from "react-icons/si";
-import { IoCodeSlashSharp  } from "react-icons/io5";
+import { IoCodeSlashSharp } from "react-icons/io5";
 import { FaDatabase } from "react-icons/fa6";
 import { FaPhoenixFramework } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import '../styles/skills.css'
 
-
 const skills = [
   {
     title: 'Programming Languages',
-    icons: <CiDesktop/>,
+    icons: <CiDesktop />,
     des: 'C#, shell, C-Programming, Python, Javascript, ASP.NET and Ruby'
   },
   {
     title: 'Frotend',
-    icons: <IoCodeSlashSharp  />,
+    icons: <IoCodeSlashSharp />,
     des: 'HTML, CSS and React'
   },
   {
@@ -28,7 +27,7 @@ const skills = [
   },
   {
     title: 'Devops',
-    icons: <SiAzuredevops/>,
+    icons: <SiAzuredevops />,
     des: 'Linux/Unix commands, Datadog, puppet, Docker, and Azure'
   },
   {
@@ -38,26 +37,27 @@ const skills = [
   },
   {
     title: 'Version Control',
-    icons: <FaGithub/>,
+    icons: <FaGithub />,
     des: 'git and github'
   }
 ]
+
 const Skills = () => {
   return (
     <div className='skills--page--tittle'>
       <Typography variant='h4'>Skills</Typography>
-      <Divider/>
-    <div className='skills--container'>
-      {skills.map((item) => (
-        <div className="skills">
-          <div className='skills--cover'>{item.icons}</div>
-          <div className='skills--title'>
-            <Typography variant='h5'>{item.title}</Typography>
+      <Divider />
+      <div className='skills--container'>
+        {skills.map((item) => (
+          <div className="skills">
+            <div className='skills--cover'>{item.icons}</div>
+            <div className='skills--title'>
+              <Typography variant='h5'>{item.title}</Typography>
+            </div>
+            <Typography className='skills--description'>{item.des}</Typography>
           </div>
-          <Typography variant='h7'>{item.des}</Typography>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
     </div>
   )
 };
