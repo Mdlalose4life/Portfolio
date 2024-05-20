@@ -99,7 +99,7 @@ const About = () => {
                 </div>    
             </div>
             <div className='button--controller'>
-              <Link >
+              <Link to="/contact" >
                 <Button variant="contained" color="success">
                     hire me
                 </Button>
