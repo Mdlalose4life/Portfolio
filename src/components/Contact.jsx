@@ -34,8 +34,8 @@ const Contact = () => {
           <div className='location--icon'>
             <div className='location--text'>Location</div>
             <FaLocationDot/>
-            <div className='kzn--text'>Kwazulu-Natal</div>
-            <div className='new--text'>Newcastle</div>
+            <div className='kzn--text'>Gauteng</div>
+            <div className='new--text'>Johannesburg</div>
           </div>
           <div className='resume--icon'>
           <div className='resume--text'>Resume</div>

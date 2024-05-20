@@ -184,10 +184,11 @@ const About = () => {
                         <li>Customized over 100 client packages, resulting in a 20% 
                           increase in customer satisfaction and retention.</li>
                           <br/>
-                        <li>Implemented Python, Django, and PostgreSQL to optimize backend 
-                          processes, leading to a 40% reduction in server response time and 
-                          a 25% increase in system efficiency, enhancing overall system 
-                          performance and productivity.</li>
+                            <li>Implemented C# with Visual Studio Community and .NET Core
+                               to optimize backend processes, resulting in a 40% reduction 
+                               in server response time and a 25% increase in system efficiency,
+                               thereby enhancing overall system performance and productivity.
+                             </li>
                       </ul>
                     </div>
                   </div>                  

@@ -24,7 +24,7 @@ const Home = () => {
           <div className='profile--image'>
             <img className='image' src={item.image} alt={item.name} />
             <div className='profile--name'>
-              <h4>{item.name}</h4>
+              <h1>{item.name}</h1>
               <div>
                 <TypeAnimation
                   preRenderFirstString={true}
