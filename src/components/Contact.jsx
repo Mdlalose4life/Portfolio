@@ -29,7 +29,7 @@ const Contact = () => {
           <div className='phone--icon'>
             <div className='phone--text'>Phone</div>
             <FaPhoneAlt/>
-            <div className='email--name'>0765142848</div>
+            <div className='email--name'>+27678295288</div>
           </div>
           <div className='location--icon'>
             <div className='location--text'>Location</div>
