@@ -249,19 +249,17 @@
 
 @media (max-width: 480px) {
   .AboutMe--Page--tittle {
-    padding: 10px;
   }
 
   .about--me--card {
-    padding: 15px;
   }
 
   .description--controller {
-    font-size: 0.9em;
+    font-size: 0.5em;
   }
 
   .button--controller {
-    margin-top: 15px;
+    margin-top: 4px;
   }
 
   .vertical-line {
@@ -273,6 +271,6 @@
   .circle {
     width: 8px;
     height: 8px;
-    margin-right: 5px;
+    margin-right: 10px;
   }
 }
