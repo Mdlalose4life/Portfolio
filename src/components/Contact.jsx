@@ -8,7 +8,7 @@ import '../styles/contact.css'
 import { Link } from 'react-router-dom';
 
 const resume = [{
-  resume_Link : 'https://drive.google.com/file/d/13PfLMcjJ3QJW__dt4bVuzNIMMjCS9ZUB/view?usp=sharing',
+  resume_Link : 'https://drive.google.com/file/d/17sllFc5IXI8Pid1IfNAtkIfN4SMtYEMP/view?usp=sharing',
 }];
 
 
