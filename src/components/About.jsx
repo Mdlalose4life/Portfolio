@@ -169,29 +169,66 @@ const About = () => {
                         <div className='circle'></div>
                         <div> <h4>LM Studio</h4></div>
                     </div>
-                    <time datetime="2022/08/16" className='exp--date'>2022 &ndash; Present</time>
+                    <time datetime="2022/08/16" className='exp--date'>Jan 2022 &ndash; Jan 2024</time>
                     <div className='description--controller'>
                       <ul>
-                        <li>Enhanced LM Studios' operational system,
-                          leading to seamless studio management across
-                          10 diverse locations and improved overall efficiency.</li>
+                        <li>Developed and maintained software applications using Django.</li>
                           <br/>
-                        <li>Optimized workflow efficiency by leading the successful 
-                          integration of appointment scheduling and image processing 
-                          features, cutting down editing processes by 50% and boosting 
-                          overall client service productivity.</li>
+                        <li>Assisted in the implementation of Agile methodologies, 
+                          improving project delivery times by 30%.</li>
                           <br/>
-                        <li>Customized over 100 client packages, resulting in a 20% 
-                          increase in customer satisfaction and retention.</li>
+                        <li>Provided application support, conducted unit, 
+                          regression, and integration testing using pytest 
+                          and unittest to ensure software quality.
+                        </li>
                           <br/>
-                            <li>Implemented C# with Visual Studio Community and .NET Core
-                               to optimize backend processes, resulting in a 40% reduction 
-                               in server response time and a 25% increase in system efficiency,
-                               thereby enhancing overall system performance and productivity.
-                             </li>
+                        <li>Implemented Infrastructure as Code (IaC) practices using 
+                            erraform and Ansible to streamline deployment processes.
+                        </li>
+                          <br/>
+                        <li>Collaborated with senior team members to gather and 
+                            analyze requirements, leading to successful feature 
+                            implementations.
+                        </li>
+                          <br/>
+                        <li>Optimized application performance, reducing server
+                          response time by 40%.
+                        </li>
                       </ul>
                     </div>
-                  </div>                  
+                  </div>
+                </div>
+              </div>
+              <div className='Experience--title'>
+                <h3>Junior Full Stack Software Developer</h3>
+              </div>
+              <div className='vertical-line '>
+                <div className='content'>
+                  <div className='componany-name--and--date--controller'>
+                    <div className='company--name'>
+                        <div className='circle'></div>
+                        <div> <h4>ITalk</h4></div>
+                    </div>
+                    <time datetime="2022/08/16" className='exp--date'>Jan 2020  &ndash; Dec 2021</time>
+                    <div className='description--controller'>
+                      <ul>
+                        <li>Built and maintained responsive and interactive websites 
+                          using HTML, CSS, JavaScript, and Python.
+                        </li>
+                          <br/>
+                        <li>Integrated data from various back-end services and
+                          databases to enhance website functionality.</li>
+                          <br/>
+                        <li>Created and maintained comprehensive software 
+                          documentation and training materials.
+                        </li>
+                          <br/>
+                        <li>Managed multiple projects simultaneously, delivering 
+                          high-quality solutions on time.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
