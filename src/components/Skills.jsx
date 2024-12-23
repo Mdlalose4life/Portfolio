@@ -1,4 +1,3 @@
-import React from 'react'
 import Divider from '@mui/material/Divider';
 import { Typography } from '@mui/material';
 import { CiDesktop } from "react-icons/ci";
@@ -48,8 +47,8 @@ const Skills = () => {
       <Typography variant='h4'>Skills</Typography>
       <Divider />
       <div className='skills--container'>
-        {skills.map((item) => (
-          <div className="skills">
+        {skills.map((item, index) => (
+          <div className="skills" key={index}>
             <div className='skills--cover'>{item.icons}</div>
             <div className='skills--title'>
               <Typography variant='h5'>{item.title}</Typography>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { HiMiniPresentationChartLine } from "react-icons/hi2";
 import { Typography} from '@mui/material';
 import { Link } from 'react-router-dom';
@@ -44,7 +43,7 @@ const Availability = [
 
 const About = () => {
   return (
-    <div className='AboutMe--Page--tittle'>
+    <div className='Page--Wrapper'>
       <div className='About--tittle'>
         <Typography variant='h5'>About Me</Typography>
       </div>
@@ -63,16 +62,16 @@ const About = () => {
           <div className='cards--and--button--controler'>
             <div className='cards--info'>
               <div className='certificate--and--country--controler'>
-                {Certficates.map((item)=>(
-                  <div className='certificate--controller'>
+                {Certficates.map((item, index)=>(
+                  <div className='certificate--controller' key={item.id || index}>
                     <Typography variant='h5'>{item.name}</Typography>
                     <Typography variant='h7'>{item.cert_Name}</Typography>
                     <Typography variant='h7'>AI Career Essentials</Typography> 
                     <Divider />
                   </div>
                 ))}
-                {Country.map((item)=>(
-                  <div className='country--controller'>
+                {Country.map((item, index)=>(
+                  <div className='country--controller' key={index}>
                     <Typography variant='h5'>{item.name}</Typography>
                     <Typography>{item.countyName}</Typography>
                     <Divider />
@@ -80,8 +79,8 @@ const About = () => {
                 ))}
                 </div>
                 <div className='github--and--availability--controller'>
-                  {Github.map((item)=>(
-                    <div className='github--controller'>
+                  {Github.map((item, index)=>(
+                    <div className='github--controller' key={index}>
                       <Typography variant='h5'>{item.name}</Typography>
                       <Link to={item.link}>
                         <Typography>{item.GithubName}</Typography>
@@ -89,8 +88,8 @@ const About = () => {
                       <Divider />
                     </div>
                     ))}
-                    {Availability.map((item)=>(
-                      <div className='availability--controller'>
+                    {Availability.map((item, index)=>(
+                      <div className='availability--controller' key={index}>
                         <Typography variant='h5'>{item.name}</Typography>
                         <Typography>{item.status}</Typography>  
                         <Divider /> 
@@ -105,19 +104,21 @@ const About = () => {
                 </Button>
               </Link>
             </div> 
-          </div>     
-          <div className='Gauges--controller'>
-            <div className='C--gauge'>
-              <PythonPointer />
-                Python (98%)
-            </div>
-            <div className='python--gauge'>
-              <SharpPoiner />
-                Javascript (96%)
-            </div>
-            <div className='Java--gauge'>
-              <ScriptGuge/>
-                C# (90%)
+          </div>
+          <div className="Gauges--wrapper">
+            <div className='Gauges--controller'>
+              <div className='C--gauge'>
+                <PythonPointer />
+                  Python (98%)
+              </div>
+              <div className='python--gauge'>
+                <SharpPoiner />
+                  Javascript (96%)
+              </div>
+              <div className='Java--gauge'>
+                <ScriptGuge/>
+                  Next.js (90%)
+              </div>
             </div>
           </div>
         </div>
@@ -135,17 +136,17 @@ const About = () => {
                   <div className='Matric--controler'>
                     <div className='circle'></div>
                     <div> <h4>Matric (Maths And Science)</h4> </div>
-                    <time datetime="2016/12/1"> Duck pond's High School &ndash; 2016 </time>
+                    <time dateTime="2016/12/1"> Duck Pond's High School &ndash; 2016 </time>
                   </div>
                   <div className='Soft--controller'>
                     <div className='circle'></div>
                     <div> <h4>Software Engineering</h4> </div>
-                    <time datetime="2016/12/1"> ALX (Hulbetortorn School) &ndash; 2023 </time>                    
+                    <time dateTime="2016/12/1"> ALX (Hulbetortorn School) &ndash; 2023 </time>                    
                   </div>
                   <div className='AI--controller'>
                     <div className='circle'></div>
                     <div> <h4>AI Career Essentials</h4> </div>
-                    <time datetime="2016/12/1">ALX (Hulbetortorn School) &ndash; 2024 </time>
+                    <time dateTime="2016/12/1">ALX (Hulbetortorn School) &ndash; 2024 </time>
                   </div>
                 </div>             
               </div>
@@ -169,7 +170,7 @@ const About = () => {
                         <div className='circle'></div>
                         <div> <h4>LM Studio</h4></div>
                     </div>
-                    <time datetime="2022/08/16" className='exp--date'>Jan 2022 &ndash; Jan 2024</time>
+                    <time dateTime="2022/08/16" className='exp--date'>Jan 2022 &ndash; Jan 2024</time>
                     <div className='description--controller'>
                       <ul>
                         <li>Developed and maintained software applications using Django.</li>
@@ -207,24 +208,33 @@ const About = () => {
                   <div className='componany-name--and--date--controller'>
                     <div className='company--name'>
                         <div className='circle'></div>
-                        <div> <h4>ITalk</h4></div>
+                        <div> <h4>Shaper (The Digital Academy)</h4></div>
                     </div>
-                    <time datetime="2022/08/16" className='exp--date'>Jan 2020  &ndash; Dec 2021</time>
+                    <time dateTime="2022/08/16" className='exp--date'>Jun 2020  &ndash; Present</time>
                     <div className='description--controller'>
                       <ul>
-                        <li>Built and maintained responsive and interactive websites 
-                          using HTML, CSS, JavaScript, and Python.
+                        <li> Developed and maintained scalable applications using Next.js and Strapi 
+                          for the Ayoba Developer Portal and Ayoba Marketplace, collaborating with third-party 
+                          companies for backend development. 
                         </li>
                           <br/>
-                        <li>Integrated data from various back-end services and
-                          databases to enhance website functionality.</li>
-                          <br/>
-                        <li>Created and maintained comprehensive software 
-                          documentation and training materials.
+                        <li>Designed and implemented the Ayoba Developer Portal to streamline developer 
+                          onboarding and enhance the user experience. <Link  href="https://developer.ayoba.me/" target="_bank" rel="noopener noreferrer"> Link to Developer Portal.</Link> 
                         </li>
                           <br/>
-                        <li>Managed multiple projects simultaneously, delivering 
-                          high-quality solutions on time.
+                        <li>Contributed to the creation of Ayoba Marketplace, an innovative platform 
+                          for app distribution and digital product sales. <Link href="https://shop.dev.ayoba.me/" target="_blank" rel="noopener noreferrer">Link to Marketplace</Link>
+                        </li>
+                          <br/>
+                        <li> Leveraged Agile methodologies to improve project timelines and 
+                          ensure alignment with stakeholder requirements. 
+                        </li>
+                        <br/>
+                        <li> Built reusable components and modular architecture for web 
+                          applications, increasing development efficiency by 25%.  
+                        </li>
+                        <br/>
+                        <li>Conducted extensive testing and debugging to ensure high application performance and security.
                         </li>
                       </ul>
                     </div>

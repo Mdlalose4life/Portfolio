@@ -1,4 +1,3 @@
-import React from 'react';
 import spiritlink from '../assets/Spiritlink.png';
 import mindpal from '../assets/mindpal.png';
 import Divider from '@mui/material/Divider';

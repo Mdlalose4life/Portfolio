@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { BiHome, BiSmile, BiAlignJustify, BiBriefcase, BiChat, BiMenu } from 'react-icons/bi';

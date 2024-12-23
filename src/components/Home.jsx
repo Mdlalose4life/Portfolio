@@ -1,4 +1,3 @@
-import React from 'react'
 import '../styles/home.css'
 import img from '../assets/Sbu.jpg'
 import { TypeAnimation } from 'react-type-animation';
@@ -20,8 +19,8 @@ const Home = () => {
   return (
     <div className='main--profile'>
       <div className='profile--container'>
-        {profile.map((item) => (
-          <div className='profile--image'>
+        {profile.map((item, index) => (
+          <div className='profile--image' key={index}>
             <img className='image' src={item.image} alt={item.name} />
             <div className='profile--name'>
               <h2>{item.name}</h2>
