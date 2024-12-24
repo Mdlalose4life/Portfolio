@@ -17,12 +17,12 @@ const skills = [
   {
     title: 'Frotend',
     icons: <IoCodeSlashSharp />,
-    des: 'HTML, CSS and React'
+    des: 'HTML, CSS, React and next.js'
   },
   {
     title: 'Database',
     icons: <FaDatabase />,
-    des: 'MySQL, SQLite Microsoft SQL Server, Mongodb and Redis'
+    des: 'MySQL, SQLite Microsoft SQL Server, Mongodb, Redis, and Strapi'
   },
   {
     title: 'Devops',

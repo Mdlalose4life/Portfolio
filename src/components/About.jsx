@@ -164,7 +164,9 @@ const About = () => {
                 <div className='content'>
                   <div className='componany-name--and--date--controller'>
                     <div className='company--name'>
-                        <div> <h4>LM Studio</h4></div>
+                        <div style={{paddingBottom:"12px"}}> 
+                          <h4>LM Studio</h4>
+                        </div>
                     </div>
                     <time dateTime="2022/08/16" className='exp--date'>Jan 2022 &ndash; Jan 2024</time>
                     <div className='description--controller'>
@@ -203,7 +205,7 @@ const About = () => {
                 <div className='content'>
                   <div className='componany-name--and--date--controller'>
                     <div className='company--name'>
-                        <div> <h4>Shaper (The Digital Academy)</h4></div>
+                        <div style={{paddingBottom:"12px"}}> <h4>Shaper (The Digital Academy)</h4></div>
                     </div>
                     <time dateTime="2022/08/16" className='exp--date'>Jun 2024  &ndash; Present</time>
                     <div className='description--controller'>
