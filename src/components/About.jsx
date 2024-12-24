@@ -12,7 +12,7 @@ import { HiAcademicCap } from "react-icons/hi2";
 const About_me = [
   {
     AboutMeName: 'Sbusiso Mdlalose',
-    description: 'I am a skilled Software Engineer driven by innovation and a commitment to excellence. With a strong foundation in software development from ALX Academy and hands-on experience at LM Studios, I specialize in designing and optimizing operational systems to streamline processes and exceed client expectations. My proficiency spans Python, JavaScript, SQL, and NoSQL databases, enabling me to tackle complex challenges with precision and creativity. '
+    description: 'Full Stack developer skilled in React, building sleek, scalable, and user-focused web interfaces with reusable components and modern design principles.'
   }
 ];
 
@@ -134,17 +134,14 @@ const About = () => {
               <div className='vertical-line'>
                 <div className='Education--content'>
                   <div className='Matric--controler'>
-                    <div className='circle'></div>
                     <div> <h4>Matric (Maths And Science)</h4> </div>
                     <time dateTime="2016/12/1"> Duck Pond's High School &ndash; 2016 </time>
                   </div>
                   <div className='Soft--controller'>
-                    <div className='circle'></div>
                     <div> <h4>Software Engineering</h4> </div>
                     <time dateTime="2016/12/1"> ALX (Hulbetortorn School) &ndash; 2023 </time>                    
                   </div>
                   <div className='AI--controller'>
-                    <div className='circle'></div>
                     <div> <h4>AI Career Essentials</h4> </div>
                     <time dateTime="2016/12/1">ALX (Hulbetortorn School) &ndash; 2024 </time>
                   </div>
@@ -167,7 +164,6 @@ const About = () => {
                 <div className='content'>
                   <div className='componany-name--and--date--controller'>
                     <div className='company--name'>
-                        <div className='circle'></div>
                         <div> <h4>LM Studio</h4></div>
                     </div>
                     <time dateTime="2022/08/16" className='exp--date'>Jan 2022 &ndash; Jan 2024</time>
@@ -207,10 +203,9 @@ const About = () => {
                 <div className='content'>
                   <div className='componany-name--and--date--controller'>
                     <div className='company--name'>
-                        <div className='circle'></div>
                         <div> <h4>Shaper (The Digital Academy)</h4></div>
                     </div>
-                    <time dateTime="2022/08/16" className='exp--date'>Jun 2020  &ndash; Present</time>
+                    <time dateTime="2022/08/16" className='exp--date'>Jun 2024  &ndash; Present</time>
                     <div className='description--controller'>
                       <ul>
                         <li> Developed and maintained scalable applications using Next.js and Strapi 
@@ -248,5 +243,4 @@ const About = () => {
     </div>
   );
 };
-
 export default About;
