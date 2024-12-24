@@ -219,11 +219,11 @@ const About = () => {
                         </li>
                           <br/>
                         <li>Designed and implemented the Ayoba Developer Portal to streamline developer 
-                          onboarding and enhance the user experience. <Link  href="https://developer.ayoba.me/" target="_bank" rel="noopener noreferrer"> Link to Developer Portal.</Link> 
+                          onboarding and enhance the user experience.  <a href="https://developer.ayoba.me/" target="_blank">Link to Developer Portal</a>. 
                         </li>
                           <br/>
                         <li>Contributed to the creation of Ayoba Marketplace, an innovative platform 
-                          for app distribution and digital product sales. <Link href="https://shop.dev.ayoba.me/" target="_blank" rel="noopener noreferrer">Link to Marketplace</Link>
+                          for app distribution and digital product sales. <a href="https://shop.dev.ayoba.me/" target="_blank">Link to Marketplace</a>
                         </li>
                           <br/>
                         <li> Leveraged Agile methodologies to improve project timelines and 
