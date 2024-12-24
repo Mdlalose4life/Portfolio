@@ -109,15 +109,15 @@ const About = () => {
             <div className='Gauges--controller'>
               <div className='C--gauge'>
                 <PythonPointer />
-                  Python (98%)
+                  Python (35%)
               </div>
               <div className='python--gauge'>
                 <SharpPoiner />
-                  Javascript (96%)
+                  Javascript (50%)
               </div>
               <div className='Java--gauge'>
                 <ScriptGuge/>
-                  Next.js (90%)
+                  Next.js (60%)
               </div>
             </div>
           </div>

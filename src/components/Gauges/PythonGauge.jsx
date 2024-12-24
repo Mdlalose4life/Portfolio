@@ -36,7 +36,7 @@ export default function PythonPointer() {
       height={200}
       startAngle={-110}
       endAngle={110}
-      value={94}
+      value={34}
     >
       <GaugeReferenceArc />
       <GaugeValueArc />

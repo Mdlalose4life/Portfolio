@@ -36,7 +36,7 @@ export default function ScriptGuge() {
       height={200}
       startAngle={-110}
       endAngle={110}
-      value={80}
+      value={60}
     >
       <GaugeReferenceArc />
       <GaugeValueArc />

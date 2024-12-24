@@ -36,7 +36,7 @@ export default function SharpPointer() {
       height={200}
       startAngle={-110}
       endAngle={110}
-      value={96}
+      value={50}
     >
       <GaugeReferenceArc />
       <GaugeValueArc />
