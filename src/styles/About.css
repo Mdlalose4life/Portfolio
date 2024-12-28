@@ -51,22 +51,14 @@
   padding: 10px;
 }
 
-.certificate--and--country--controler {}
-
-.certificate--controller {}
-
 .country--controller {
   padding-top: 20px;
 }
-
-.github--and--availability--controller {}
 
 .certificate--controller {
   display: flex;
   flex-direction: column;
 }
-
-.github--controller {}
 
 .availability--controller {
   padding-top: 20px;
@@ -125,12 +117,6 @@
   width: 100%;
 }
 
-.vertical-line {
-  border-left: 2px solid #0D47A1;
-  height: 100%;
-  margin-right: 10px;
-}
-
 .content {
   padding-left: 18px;
 }
@@ -172,12 +158,6 @@
   padding-bottom: 40px;
 }
 
-.education--icon {}
-
-.education--date {}
-
-.equcation--qualification {}
-
 .experience--card--controller {
   display: flex;
   flex-direction: column;
@@ -215,10 +195,6 @@
 .experience--icon {
   font-size: 2rem;
 }
-
-.experience--date {}
-
-.expeience--name {}
 
 .description--controller {
   padding-left: 20px;
@@ -268,12 +244,6 @@
     margin-top: 15px;
   }
 
-  .vertical-line {
-    border-left: 1px solid #ddd;
-    padding-left: 5px;
-    margin-left: 5px;
-  }
-
   .circle {
     width: 8px;
     height: 8px;
@@ -320,12 +290,6 @@
 
   .button--controller {
     margin-top: 15px;
-  }
-
-  .vertical-line {
-    border-left: 1px solid #ddd;
-    padding-left: 5px;
-    margin-left: 5px;
   }
 
   .circle {

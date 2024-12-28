@@ -1,3 +1,4 @@
+import {useEffect, useState} from "react"
 import { HiMiniPresentationChartLine } from "react-icons/hi2";
 import { Typography} from '@mui/material';
 import { Link } from 'react-router-dom';
@@ -8,6 +9,8 @@ import SharpPoiner from './Gauges/SharpGauge';
 import ScriptGuge from './Gauges/ScriptGauge';
 import Button from '@mui/material/Button';
 import { HiAcademicCap } from "react-icons/hi2";
+import Timeline from "./Timelines/Timeline";
+import Exptimeline from "./Timelines/Exptimeline";
 
 const About_me = [
   {
@@ -41,7 +44,112 @@ const Availability = [
     status: 'Immediately',
   }];
 
+  const timelineItems = [
+    {
+      title: "Matric (Maths And Science)",
+      school: "Duck Pond's High School",
+      date: "2016",
+    },
+    {
+      title: "Software Engineering",
+      school: "ALX (Hulbetortorn School)",
+      date: "2023",
+    },
+    {
+      title: "AI Career Essentials",
+      school: "ALX (Hulbetortorn School)",
+      date: "2024",
+    },
+  ];
+
+const LMtimeline = [
+  {
+    companyName: "LM Studio",
+    date: "Jan 2024 - Jan 2024",
+    desc: (
+      <div className="description--controller">
+        <ul>
+          <li>Developed and maintained software applications using Django.</li>
+            <br/>
+          <li>Assisted in the implementation of Agile methodologies, 
+            improving project delivery times by 30%.</li>
+            <br/>
+          <li>Provided application support, conducted unit, 
+            regression, and integration testing using pytest 
+            and unittest to ensure software quality.
+          </li>
+            <br/>
+          <li>Implemented Infrastructure as Code (IaC) practices using 
+              erraform and Ansible to streamline deployment processes.
+          </li>
+            <br/>
+          <li>Collaborated with senior team members to gather and 
+              analyze requirements, leading to successful feature 
+              implementations.
+          </li>
+            <br/>
+          <li>Optimized application performance, reducing server
+            response time by 40%.
+          </li>
+        </ul>
+      </div>
+    )
+  },
+];
+
+const ShaperTimeline = [{
+    companyName: "Shaper (The Digital Academy)",
+    date: "Jun 2024 - Present",
+    desc: (
+      <div className="description--controller">
+        <ul>
+          <li> Developed and maintained scalable applications using Next.js and Strapi 
+            for the Ayoba Developer Portal and Ayoba Marketplace, collaborating with third-party 
+            companies for backend development. 
+          </li>
+            <br/>
+          <li>Designed and implemented the Ayoba Developer Portal to streamline developer 
+            onboarding and enhance the user experience.  <a href="https://developer.ayoba.me/" target="_blank">Link to Developer Portal</a>. 
+          </li>
+            <br/>
+          <li>Contributed to the creation of Ayoba Marketplace, an innovative platform 
+            for app distribution and digital product sales. <a href="https://shop.ayoba.me/" target="_blank">Link to Marketplace</a>
+          </li>
+            <br/>
+          <li> Leveraged Agile methodologies to improve project timelines and 
+            ensure alignment with stakeholder requirements. 
+          </li>
+          <br/>
+          <li> Built reusable components and modular architecture for web 
+            applications, increasing development efficiency by 25%.  
+          </li>
+          <br/>
+          <li>Conducted extensive testing and debugging to ensure high application performance and security.
+        </li>
+      </ul>
+    </div>
+    )
+  }
+];
+
 const About = () => {
+  const [stopped, setStopped] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const componentHeight = 300;
+      if (window.screenY >= componentHeight){
+        setStopped(true)
+      } else {
+        setStopped(false)
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+
   return (
     <div className='Page--Wrapper'>
       <div className='About--tittle'>
@@ -130,23 +238,13 @@ const About = () => {
               </div>
               <Typography variant="h5">Education</Typography>
             </div>
-            <div className='education--card--controler'>
-              <div className='vertical-line'>
-                <div className='Education--content'>
-                  <div className='Matric--controler'>
-                    <div> <h4>Matric (Maths And Science)</h4> </div>
-                    <time dateTime="2016/12/1"> Duck Pond's High School &ndash; 2016 </time>
-                  </div>
-                  <div className='Soft--controller'>
-                    <div> <h4>Software Engineering</h4> </div>
-                    <time dateTime="2016/12/1"> ALX (Hulbetortorn School) &ndash; 2023 </time>                    
-                  </div>
-                  <div className='AI--controller'>
-                    <div> <h4>AI Career Essentials</h4> </div>
-                    <time dateTime="2016/12/1">ALX (Hulbetortorn School) &ndash; 2024 </time>
-                  </div>
-                </div>             
-              </div>
+            <div className='education--card--controler'
+              style={{
+                position:"sticky",
+                top: stopped ? "300px" : "20px"
+              }}
+            >
+              <Timeline items={timelineItems}/>
             </div>
           </div>
           <div className='Expience--title--and--controler'>
@@ -163,38 +261,7 @@ const About = () => {
               <div className='vertical-line '>
                 <div className='content'>
                   <div className='componany-name--and--date--controller'>
-                    <div className='company--name'>
-                        <div style={{paddingBottom:"12px"}}> 
-                          <h4>LM Studio</h4>
-                        </div>
-                    </div>
-                    <time dateTime="2022/08/16" className='exp--date'>Jan 2022 &ndash; Jan 2024</time>
-                    <div className='description--controller'>
-                      <ul>
-                        <li>Developed and maintained software applications using Django.</li>
-                          <br/>
-                        <li>Assisted in the implementation of Agile methodologies, 
-                          improving project delivery times by 30%.</li>
-                          <br/>
-                        <li>Provided application support, conducted unit, 
-                          regression, and integration testing using pytest 
-                          and unittest to ensure software quality.
-                        </li>
-                          <br/>
-                        <li>Implemented Infrastructure as Code (IaC) practices using 
-                            erraform and Ansible to streamline deployment processes.
-                        </li>
-                          <br/>
-                        <li>Collaborated with senior team members to gather and 
-                            analyze requirements, leading to successful feature 
-                            implementations.
-                        </li>
-                          <br/>
-                        <li>Optimized application performance, reducing server
-                          response time by 40%.
-                        </li>
-                      </ul>
-                    </div>
+                    <Exptimeline items={LMtimeline}/>
                   </div>
                 </div>
               </div>
@@ -204,37 +271,7 @@ const About = () => {
               <div className='vertical-line '>
                 <div className='content'>
                   <div className='componany-name--and--date--controller'>
-                    <div className='company--name'>
-                        <div style={{paddingBottom:"12px"}}> <h4>Shaper (The Digital Academy)</h4></div>
-                    </div>
-                    <time dateTime="2022/08/16" className='exp--date'>Jun 2024  &ndash; Present</time>
-                    <div className='description--controller'>
-                      <ul>
-                        <li> Developed and maintained scalable applications using Next.js and Strapi 
-                          for the Ayoba Developer Portal and Ayoba Marketplace, collaborating with third-party 
-                          companies for backend development. 
-                        </li>
-                          <br/>
-                        <li>Designed and implemented the Ayoba Developer Portal to streamline developer 
-                          onboarding and enhance the user experience.  <a href="https://developer.ayoba.me/" target="_blank">Link to Developer Portal</a>. 
-                        </li>
-                          <br/>
-                        <li>Contributed to the creation of Ayoba Marketplace, an innovative platform 
-                          for app distribution and digital product sales. <a href="https://shop.ayoba.me/" target="_blank">Link to Marketplace</a>
-                        </li>
-                          <br/>
-                        <li> Leveraged Agile methodologies to improve project timelines and 
-                          ensure alignment with stakeholder requirements. 
-                        </li>
-                        <br/>
-                        <li> Built reusable components and modular architecture for web 
-                          applications, increasing development efficiency by 25%.  
-                        </li>
-                        <br/>
-                        <li>Conducted extensive testing and debugging to ensure high application performance and security.
-                        </li>
-                      </ul>
-                    </div>
+                    <Exptimeline items={ShaperTimeline}/>
                   </div>
                 </div>
               </div>

@@ -1,0 +1,70 @@
+/* Timeline Container */
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1rem;
+  }
+
+  .education-vertical-line {
+    position: absolute;
+    left: 17px;
+    top: 12%;
+    bottom: 12.5%;
+    width: 4px;
+    background-color: #526d82;
+    border: none;
+    border-radius: 4rem;
+
+    @media (max-width: 768px) {
+      left: 13.5px;
+      top: 12%;
+    }
+  } 
+
+  /* Individual Timeline Item */
+  .timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin: 2rem 0;
+  }
+  
+  /* Timeline Cycle (milestone) */
+  .timeline-cycle {
+    width: 20px;
+    height: 20px;
+    background-color: #0D47A1;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+  
+  /* Connecting line */
+  .timeline-cycle::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: calc(100% - 20px);
+    background-color: #ccc;
+  }
+
+  
+  .timeline-item:last-child .timeline-cycle::after {
+    display: none;
+  }
+  
+  /* Timeline Content */
+  /* .timeline-content {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+  } */
+
+
+  
