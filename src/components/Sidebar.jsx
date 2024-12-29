@@ -31,6 +31,13 @@ const Sidebar = () => {
   };
 
   return (
+    <>
+    {isExpanded && window.innerWidth <= 768 && (
+      <div
+        className="backdrop"
+        onClick={() => setIsExpanded(false)}
+      />
+    )}
     <div className={`menu ${isExpanded ? 'expanded' : 'collapsed'}`}>
       <button className="toggle-button" onClick={toggleSidebar}>
         <BiMenu />
@@ -62,6 +69,7 @@ const Sidebar = () => {
         </NavLink>
       </div>
     </div>
+    </>
   );
 };
 
