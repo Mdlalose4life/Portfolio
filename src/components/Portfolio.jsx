@@ -26,7 +26,7 @@ const Portfolio = () => {
       <div className='portfolio--container'>
         {portfolio.map((item) => (
           <div className='portfolio--card' key={item}>
-            <Link to={item.link} style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Link to={item.link} target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
               <img className='portfolio--image' src={item.project} alt={item.project_title} />
             </Link>
             <div className='portfolio--title'>

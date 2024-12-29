@@ -56,7 +56,7 @@ const Home = () => {
                 />
                 <div className='icons'>
                   <div className='linkedin--icon'>
-                    <Link to={item.link} style={{ textDecoration: 'none', color: 'inherit'}}>
+                    <Link to={item.link} target="_blank" style={{ textDecoration: 'none', color: 'inherit'}}>
                       <FaLinkedin />               
                     </Link>
                   </div>
