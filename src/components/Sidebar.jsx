@@ -17,7 +17,7 @@ const Sidebar = () => {
   };
 
   useEffect(() => {
-    handleResize(); // Set the initial state based on screen size
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);

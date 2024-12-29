@@ -14,13 +14,15 @@
 }
 
 .menu.collapsed {
-    width: 80px;
+    width: 59px;
     padding: 10px;
 }
 
 .menu.expanded {
     width: 200px;
     padding: 20px;
+    height: 100%;
+    z-index: 1;
 }
 
 .toggle-button {
