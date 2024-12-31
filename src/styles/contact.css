@@ -1,82 +1,117 @@
-.contact--me--controller {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #526d82;
-  }
+.contact-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 16px;
+  color: #526d82;
+  min-width: 320;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
   
-  .contact--me--title--controller {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .contact--and--icons--controller {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .icons--controller {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .icons--controller > div {
-    flex: 1 1 calc(50% - 40px);
-    max-width: calc(50% - 40px); 
-    box-sizing: border-box;
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 20px;
-  }
-  
-  .icons--controller .email--icon,
-  .icons--controller .phone--icon,
-  .icons--controller .location--icon,
-  .icons--controller .resume--icon {
-    display: flex;
+}
+
+.contact-me h4{
+  font-size: 1.7rem;
+  margin-bottom: 4px;
+  top: 0;
+  left: 0;
+}
+
+.contact-header h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  margin-top: 50px;
+  align-items: center;
+
+}
+
+.contact-header p {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+
+  @media (max-width: 768px) {
     flex-direction: column;
-    align-items: center;
-  }
-  
-  .icons--controller .email--text,
-  .icons--controller .phone--text,
-  .icons--controller .location--text,
-  .icons--controller .resume--text {
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  
-  .icons--controller .email--name,
-  .icons--controller .kzn--text,
-  .icons--controller .new--text,
-  .icons--controller .click--text {
-    margin-top: 8px;
-  }
-  
-  @media (max-width: 740px) {
-    .icons--controller > div {
-      flex: 1 1 100%;
-      max-width: 100%;
     }
-  }
-  
-  @media (max-width: 480px) {
-    .contact--me--controller {
-      padding: 10px;
+}
+
+.input-field {
+  padding: 18px;
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: #C5CAE9;
+  border-radius: 5px;
+  font-size: 1.6rem;
+
+  @media (max-width: 768px) {
+    border-radius: 5px;
+    font-size: 1rem;
     }
-  
-    .icons--controller {
-      flex-direction: row;
-      gap: 10px;
+}
+
+.input-field.full-width {
+  width: 100%;
+}
+
+.textarea-field {
+  padding: 15px;
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: #C5CAE9;
+  border-radius: 5px;
+  font-size: 1rem;
+  min-height: 300px;
+  resize: vertical;
+
+  @media (min-width: 768px) {
+    max-height: 100px;
+    resize: vertical;
     }
-  
-    .icons--controller > div {
-      padding: 10px;
+}
+
+.textarea-field::placeholder {
+  font-size: 1.6rem;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
     }
-  }
-  
+}
+
+.submit-button {
+  padding: 12px 8px;
+  background-color: #526d82;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    }
+}
+
+.submit-button:hover {
+  background-color: #0f2c42;
+  transform: scale(1.02);
+}

@@ -1,55 +1,50 @@
-import React from 'react'
-import { MdEmail } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
-import { AiOutlineFilePdf } from "react-icons/ai";
+import "../styles/contact.css";
 import Divider from '@mui/material/Divider';
-import '../styles/contact.css'
-import { Link } from 'react-router-dom';
-
-const resume = [{
-  resume_Link : 'https://drive.google.com/file/d/17sllFc5IXI8Pid1IfNAtkIfN4SMtYEMP/view?usp=sharing',
-}];
-
+import { Typography} from '@mui/material';
 
 const Contact = () => {
   return (
-    <div className='contact--me--controller'>
-      <div className='contact--me--title--controller'>
-        <h2>Contact me</h2>    
+    <div className="contact-container">
+      <div className="contact-me">
+        <Typography><h4>Contact Me</h4></Typography>
       </div>
-        <Divider/>
-      <div className='contact--and--icons--controller'>
-        <div className='icons--controller'>
-          <div className='email--icon'>
-            <div className='email--text'>Email</div>
-              <MdEmail />
-            <div className='email--name'>blessing1059@gmail.com</div>
-          </div>
-          <div className='phone--icon'>
-            <div className='phone--text'>Phone</div>
-            <FaPhoneAlt/>
-            <div className='email--name'>+27678295288</div>
-          </div>
-          <div className='location--icon'>
-            <div className='location--text'>Location</div>
-            <FaLocationDot/>
-            <div className='kzn--text'>Gauteng</div>
-            <div className='new--text'>Johannesburg</div>
-          </div>
-          <div className='resume--icon'>
-          <div className='resume--text'>Resume</div>
-            <AiOutlineFilePdf />
-            {resume.map((item)=>(
-              <Link to={item.resume_Link}>
-                <div className='click--text'>click here</div>              
-              </Link>
-            ))}
-          </div>
+      <Divider/>
+      <div className="contact-header">
+        <h1>Get in Touch</h1>
+        <p>For inquiries, support, or collaboration, please fill out the form below. I’ll get back to you soon!</p>
+      </div>
+      <form className="contact-form">
+        <div className="input-group">
+          <input
+            type="text"
+            className="input-field"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            className="input-field"
+            placeholder="Email"
+            required
+          />
         </div>
-      </div>
+        <input
+          type="text"
+          className="input-field full-width"
+          placeholder="Subject"
+          required
+        />
+        <textarea
+          className="textarea-field"
+          placeholder="Message"
+          required
+        ></textarea>
+        <button type="submit" className="submit-button">
+          Send Message
+        </button>
+      </form>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
