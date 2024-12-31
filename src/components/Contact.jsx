@@ -10,7 +10,7 @@ const Contact = () => {
       </div>
       <Divider/>
       <div className="contact-header">
-        <h1>Get in Touch</h1>
+        <Typography><h1>Get in Touch</h1></Typography>
         <p>For inquiries, support, or collaboration, please fill out the form below. I’ll get back to you soon!</p>
       </div>
       <form className="contact-form">
