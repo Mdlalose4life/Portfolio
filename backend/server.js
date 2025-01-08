@@ -10,9 +10,11 @@ dotenv.config();
 
 const corsOption = {
     origin:process.env.FRONTEND_DOMAIN,
+    method: ['GET', 'POST', 'OPTION'],
     optionsSuccessStatus:200
 };
 app.use(cors(corsOption));
+app.options('*', cors(corsOption));
 app.use(bodyParser.json());
 
 
