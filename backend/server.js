@@ -8,17 +8,18 @@ const app = express();
 dotenv.config();
 
 
+
 const corsOption = {
-    origin:process.env.FRONTEND_DOMAIN,
+    origin:"*",
     method: ['GET', 'POST', 'OPTION'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
     optionsSuccessStatus:200
 };
+
 app.use(cors(corsOption));
-app.options('*', cors(corsOption));
 app.use(bodyParser.json());
 
-
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 2000;
 
 app.get("/", (req, res) => {
     res.send("I am alive")
@@ -48,6 +49,7 @@ app.post("/send-email", async (req, res) => {
         res.status(200).json({ message: "Email sent successfully." })
 
     } catch (error) {
+        console.log("win")
         res.status(500).json({error: "Failed to send email", details: error.message})
     }
 });
