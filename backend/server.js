@@ -7,7 +7,12 @@ import dotenv from 'dotenv'
 const app = express();
 dotenv.config();
 
-app.use(cors());
+
+const corsOption = {
+    origin:process.env.FRONTEND_DOMAIN,
+    optionsSuccessStatus:200
+};
+app.use(cors(corsOption));
 app.use(bodyParser.json());
 
 
