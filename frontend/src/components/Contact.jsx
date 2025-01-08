@@ -18,6 +18,7 @@ const Contact = () => {
     };
 
     const backendURL = import.meta.env.VITE_BACKEND_URL;
+    console.log(backendURL) 
     try {
       setIsSubmitting(true)
       const response = await fetch(`${backendURL}/send-email`, {
