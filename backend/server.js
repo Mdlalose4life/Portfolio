@@ -13,6 +13,10 @@ app.use(bodyParser.json());
 
 const PORT = process.env.PORT;
 
+app.get("/", (req, res) => {
+    res.send("I am alive")
+});
+
 app.post("/send-email", async (req, res) => {
     const { name, email, subject, message } = req.body
 
