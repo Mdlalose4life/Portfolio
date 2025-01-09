@@ -64,7 +64,7 @@ const Contact = () => {
       </div>
       <Divider />
       <div className="contact-header">
-        <Typography><h1>Get in Touch</h1></Typography>
+          <h1>Get in Touch</h1>
         <p>For inquiries, support, or collaboration, please fill out the form below. I’ll get back to you soon!</p>
       </div>
       <form className="contact-form" onSubmit={handleSubmit}>

@@ -51,9 +51,9 @@ const Skills = () => {
           <div className="skills" key={index}>
             <div className='skills--cover'>{item.icons}</div>
             <div className='skills--title'>
-              <Typography variant='h5'>{item.title}</Typography>
+              <h5>{item.title}</h5>
             </div>
-            <Typography className='skills--description'>{item.des}</Typography>
+            <p className='skills--description'>{item.des}</p>
           </div>
         ))}
       </div>

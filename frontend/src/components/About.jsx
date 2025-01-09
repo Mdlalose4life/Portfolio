@@ -103,28 +103,24 @@ const ShaperTimeline = [{
     desc: (
       <div className="description--controller">
         <ul>
-          <li> Developed and maintained scalable applications using Next.js and Strapi 
-            for the Ayoba Developer Portal and Ayoba Marketplace, collaborating with third-party 
-            companies for backend development. 
+          <li> Develop and maintain scalable applications, such as the <a href="https://developer.ayoba.me/" target="_blank">Developer Portal  </a> 
+           and <a href="https://shop.ayoba.me/" target="_blank"> Ayoba Marketplace </a>, for Ayoba, while collaborating with third-party companies 
+          for backend integration and support. 
           </li>
             <br/>
-          <li>Designed and implemented the Ayoba Developer Portal to streamline developer 
-            onboarding and enhance the user experience.  <a href="https://developer.ayoba.me/" target="_blank">Link to Developer Portal</a>. 
+          <li>DDesign and implement the Ayoba Developer Portal to streamline developer onboarding and enhance the user experience. 
           </li>
             <br/>
-          <li>Contributed to the creation of Ayoba Marketplace, an innovative platform 
-            for app distribution and digital product sales. <a href="https://shop.ayoba.me/" target="_blank">Link to Marketplace</a>
+          <li>Leverage Agile methodologies to improve project timelines and ensure alignment with stakeholder requirements.
           </li>
             <br/>
-          <li> Leveraged Agile methodologies to improve project timelines and 
-            ensure alignment with stakeholder requirements. 
+          <li> Build reusable components and modular architecture for web applications, increasing development efficiency by 25%.
           </li>
           <br/>
-          <li> Built reusable components and modular architecture for web 
-            applications, increasing development efficiency by 25%.  
+          <li> Conduct extensive testing and debugging to ensure high application performance and security.
           </li>
           <br/>
-          <li>Conducted extensive testing and debugging to ensure high application performance and security.
+          <li>Collaborate with cross-functional teams to gather and analyze requirements for seamless feature integration.
         </li>
       </ul>
     </div>
