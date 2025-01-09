@@ -168,16 +168,16 @@ const About = () => {
               <div className='certificate--and--country--controler'>
                 {Certficates.map((item, index)=>(
                   <div className='certificate--controller' key={item.id || index}>
-                    <Typography variant='h5'>{item.name}</Typography>
-                    <Typography variant='h7'>{item.cert_Name}</Typography>
-                    <Typography variant='h7'>AI Career Essentials</Typography> 
+                    <p style={{fontWeight:"bold", fontSize:"1.3rem"}}>{item.name}</p>
+                    <p>{item.cert_Name}</p>
+                    <p>AI Career Essentials</p> 
                     <Divider />
                   </div>
                 ))}
                 {Country.map((item, index)=>(
                   <div className='country--controller' key={index}>
-                    <Typography variant='h5'>{item.name}</Typography>
-                    <Typography>{item.countyName}</Typography>
+                    <p style={{fontWeight:"bold", fontSize:"1.3rem"}}>{item.name}</p>
+                    <p>{item.countyName}</p>
                     <Divider />
                   </div>
                 ))}
@@ -185,17 +185,17 @@ const About = () => {
                 <div className='github--and--availability--controller'>
                   {Github.map((item, index)=>(
                     <div className='github--controller' key={index}>
-                      <Typography variant='h5'>{item.name}</Typography>
-                      <Link to={item.link}>
-                        <Typography>{item.GithubName}</Typography>
+                      <p style={{fontWeight:"bold", fontSize:"1.3rem"}}>{item.name}</p>
+                      <Link to={item.link} target="_blank">
+                        <p>{item.GithubName}</p>
                       </Link>
                       <Divider />
                     </div>
                     ))}
                     {Availability.map((item, index)=>(
                       <div className='availability--controller' key={index}>
-                        <Typography variant='h5'>{item.name}</Typography>
-                        <Typography>{item.status}</Typography>  
+                        <p style={{fontWeight:"bold", fontSize:"1.3rem"}}>{item.name}</p>
+                        <p>{item.status}</p>  
                         <Divider /> 
                     </div>
                   ))}
@@ -232,7 +232,7 @@ const About = () => {
               <div className='edication--icon'>
               <HiAcademicCap />
               </div>
-              <Typography variant="h5">Education</Typography>
+              <h2>Education</h2>
             </div>
             <div className='education--card--controler'
               style={{
@@ -248,7 +248,7 @@ const About = () => {
               <div className='experience--icon'>
                 <HiMiniPresentationChartLine />
               </div>
-              <Typography variant="h5">Experience</Typography>
+              <h2>Experience</h2>
             </div>
             <div className='experience--card--controller'>
               <div className='Experience--title'>

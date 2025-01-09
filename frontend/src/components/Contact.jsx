@@ -60,7 +60,7 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <div className="contact-me">
-        <Typography><h4>Contact Me</h4></Typography>
+        <Typography variant="h4">Contact Me</Typography>
       </div>
       <Divider />
       <div className="contact-header">
