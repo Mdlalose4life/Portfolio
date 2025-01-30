@@ -65,7 +65,7 @@ const Availability = [
 const LMtimeline = [
   {
     companyName: "LM Studio",
-    date: "Jan 2024 - Jan 2024",
+    date: "Jan 2023 - Jan 2024",
     desc: (
       <div className="description--controller">
         <ul>
@@ -104,7 +104,7 @@ const ShaperTimeline = [{
       <div className="description--controller">
         <ul>
           <li> Develop and maintain scalable applications, such as the <a href="https://developer.ayoba.me/" target="_blank">Developer Portal </a> 
-           and <a href="https://shop.ayoba.me/" target="_blank"> Ayoba Marketplace</a>, for Ayoba, while collaborating with third-party companies 
+           and <a href="/" target="_blank"> Ayoba Marketplace</a>, for Ayoba, while collaborating with third-party companies 
           for backend integration and support. 
           </li>
             <br/>
