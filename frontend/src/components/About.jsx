@@ -104,7 +104,7 @@ const ShaperTimeline = [{
       <div className="description--controller">
         <ul>
           <li> Develop and maintain scalable applications, such as the <a href="https://developer.ayoba.me/" target="_blank">Developer Portal </a> 
-           and <a href="/" target="_blank"> Ayoba Marketplace</a>, for Ayoba, while collaborating with third-party companies 
+           and <a href="/https://shop.ayoba.me" target="_blank"> Ayoba Marketplace</a>, for Ayoba, while collaborating with third-party companies 
           for backend integration and support. 
           </li>
             <br/>
