@@ -108,7 +108,7 @@ const ShaperTimeline = [{
           for backend integration and support. 
           </li>
             <br/>
-          <li>Design and implement the Ayoba Developer Portal to streamline developer onboarding and enhance the user experience. 
+          <li> Implement the designs of Ayoba Developer Portal to streamline developer onboarding and enhance the user experience. 
           </li>
             <br/>
           <li>Leverage Agile methodologies to improve project timelines and ensure alignment with stakeholder requirements.
