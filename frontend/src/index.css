@@ -3,30 +3,28 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    box-sizing: border-box;
     font-family: Quicksand;;
 }
 
 body {
     background: #C5CAE9;
-    padding: 5px; /* Further decrease padding for better space utilization */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    padding: 5px;
+    overflow-x: hidden;
 }
 
-/* Adjust font size for better readability */
 html {
-    font-size: 12px; /* Further decrease base font size */
+    font-size: 12px;
 }
 
-/* Add additional styles for responsiveness */
 @media (max-width: 768px) {
     html {
-        font-size: 10px; /* Decrease base font size for smaller screens */
+        font-size: 10px;
     }
 }
 
 @media (max-width: 480px) {
     html {
-        font-size: 8px; /* Further decrease base font size for even smaller screens */
+        font-size: 8px;
     }
 }
