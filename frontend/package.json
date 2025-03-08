@@ -30,6 +30,7 @@
     "react-spinners": "^0.15.0",
     "react-toastify": "^11.0.2",
     "react-type-animation": "^3.2.0",
+    "styled-components": "^6.1.15",
     "type-animation": "^0.1.5",
     "vite-plugin-pwa": "^0.20.0"
   },

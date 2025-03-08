@@ -275,6 +275,7 @@
   .education-and-experience {
     flex-direction: column;
     align-items: center;
+    width: 90%;
     gap: 20px;
   }
 }
@@ -324,6 +325,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    width: 90%;
   }
 
   .education--card--controler,
