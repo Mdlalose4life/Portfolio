@@ -47,23 +47,23 @@ const Sidebar = () => {
         {isExpanded && <h2>Sbusiso</h2>}
       </div>
       <div className='menu--list'>
-        <NavLink to='/' className={({ isActive }) => isActive ? "item active" : "item"}>
+        <NavLink to='/' onClick={() => {setIsExpanded(false)}} className={({ isActive }) => isActive ? "item active" : "item"}>
           <BiHome className="icon" />
           {isExpanded && <span>Home</span>}
         </NavLink>
-        <NavLink to='/about' className={({ isActive }) => isActive ? "item active" : "item"}>
+        <NavLink to='/about' onClick={() => {setIsExpanded(false)}} className={({ isActive }) => isActive ? "item active" : "item"}>
           <BiSmile className="icon" />
           {isExpanded && <span>About</span>}
         </NavLink>
-        <NavLink to='/skills' className={({ isActive }) => isActive ? "item active" : "item"}>
+        <NavLink to='/skills' onClick={() => {setIsExpanded(false)}} className={({ isActive }) => isActive ? "item active" : "item"}>
           <BiAlignJustify className="icon" />
           {isExpanded && <span>Skills</span>}
         </NavLink>
-        <NavLink to='/portfolio' className={({ isActive }) => isActive ? "item active" : "item"}>
+        <NavLink to='/portfolio' onClick={() => {setIsExpanded(false)}} className={({ isActive }) => isActive ? "item active" : "item"}>
           <BiBriefcase className="icon" />
           {isExpanded && <span>Portfolio</span>}
         </NavLink>
-        <NavLink to='/contact' className={({ isActive }) => isActive ? "item active" : "item"}>
+        <NavLink to='/contact' onClick={() => {setIsExpanded(false)}} className={({ isActive }) => isActive ? "item active" : "item"}>
           <BiChat className="icon" />
           {isExpanded && <span>Contact</span>}
         </NavLink>
