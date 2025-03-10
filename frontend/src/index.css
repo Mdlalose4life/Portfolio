@@ -7,11 +7,207 @@
     font-family: Quicksand;;
 }
 
-body {
+
+/* LHS BG colos */
+:root {
+    --RHS--Cl: #E8EAF6;
+}
+
+body.dark {
+    --RHS--Cl: #1E1E1E;
+}
+
+body.pink {
+    --RHS--Cl:  #FFC0CB; ;
+}
+
+body.purple {
+    --RHS--Cl: purple;
+}
+
+/* Background Body */
+body.light {
     background: #C5CAE9;
     padding: 5px;
     overflow-x: hidden;
 }
+
+body.dark {
+    background-color: black;
+    padding: 5px;
+    overflow-x: hidden;;
+}
+
+body.pink {
+    background-color: rgb(244, 112, 134);
+    padding: 5px;
+    overflow-x: hidden;
+}
+
+body.purple {
+    background-color: #420442;
+    padding: 5px;
+    overflow-x: hidden;
+}
+
+/* SideBar Style */
+:root {
+    --menu-bg: #C5CAE9;
+}
+
+body.dark {
+    --menu-bg: #000000;
+}
+
+body.pink {
+    --menu-bg: rgb(244, 112, 134);
+}
+
+body.purple {
+    --menu-bg: #420442;
+}
+
+/* Icons colos */
+:root {
+    --icons-cl: #27374d;
+}
+
+body.dark {
+    --icons-cl: white;
+}
+
+body.pink {
+    --icons-cl: #3D0301;
+}
+
+body.purple {
+    --icons-cl: #e0aaff;
+}
+
+/* Skills Icons colos */
+:root {
+    --Skills--icons-cl: #27374d;
+}
+
+body.dark {
+    --Skills--icons-cl: rgb(0, 0, 0);
+}
+
+body.pink {
+    --Skills--icons-cl: #3D0301;
+}
+
+body.purple {
+    --Skills--icons-cl: #510b79;
+}
+
+
+/* MileStones Cycle */
+:root {
+    --mile-cyl: #27374d;
+}
+
+body.dark {
+    --mile-cyl: white;
+}
+
+body.pink {
+    --mile-cyl: #3D0301;
+}
+
+body.purple {
+    --mile-cyl: #e0aaff;
+}
+
+html {
+    font-size: 12px;
+}
+
+/* Connecting Line */
+:root {
+    --connection--line: #526d82;
+}
+
+body.dark {
+    --connection--line: white;
+}
+
+body.pink {
+    --connection--line: #F7A8C4;
+}
+
+body.purple {
+    --connection--line: #e0aaff;
+}
+
+/* Guage after */
+:root {
+    --Guige--after: #526d82;
+}
+
+body.dark {
+    --Guige--after: white;
+}
+
+body.pink {
+    --Guige--after: #F7A8C4;
+}
+
+body.purple {
+    --Guige--after: #e0aaff;
+}
+
+/* Hover state */
+:root {
+    --Hover--state: #27374d;
+}
+
+body.dark {
+    --Hover--state: white;
+}
+
+body.pink {
+    --Hover--state: #F7A8C4;
+}
+
+body.purple {
+    --Hover--state: #e0aaff;
+}
+
+/* Text on Hover */
+:root {
+    --Hover--text: white;
+}
+
+body.dark {
+    --Hover--text: black;
+}
+
+body.pink {
+    --Hover--text: black;
+}
+
+body.purple {
+    --Hover--text: black;
+}
+
+/* Fotm Text on Hover */
+:root {
+    --form--Hover--text: white;
+}
+
+body.dark {
+    --form--Hover--text: rgb(109, 109, 109);
+}
+
+body.pink {
+    --form--Hover--text: black;
+}
+
+body.purple {
+    --form--Hover--text: black;
+}
+
 
 html {
     font-size: 12px;

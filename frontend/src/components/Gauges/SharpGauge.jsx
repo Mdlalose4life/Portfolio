@@ -5,6 +5,7 @@ import {
   GaugeReferenceArc,
   useGaugeState,
 } from '@mui/x-charts/Gauge';
+import { red } from '@mui/material/colors';
 
 function GaugePointer() {
   const { valueAngle, outerRadius, cx, cy } = useGaugeState();
@@ -38,7 +39,7 @@ export default function SharpPointer() {
       endAngle={110}
       value={50}
     >
-      <GaugeReferenceArc />
+      <GaugeReferenceArc stroke='blue'/>
       <GaugeValueArc />
       <GaugePointer />
     </GaugeContainer>

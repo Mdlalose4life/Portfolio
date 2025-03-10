@@ -20,8 +20,23 @@
   margin: auto;
 }
 
-.profile--name {
+.profile--name.light {
   color: #526d82;
+  margin-top: 10px;
+}
+
+.profile--name.dark {
+  color: white;
+  margin-top: 10px;
+}
+
+.profile--name.pink {
+  color: #a73b74;
+  margin-top: 10px;
+}
+
+.profile--name.purple {
+  color:#180118;
   margin-top: 10px;
 }
 

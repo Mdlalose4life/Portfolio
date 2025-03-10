@@ -4,7 +4,7 @@
 }
 
 .dashboard--content {
-    background: #E8EAF6;
+    background: var(--RHS--Cl);
     flex: 1;
     justify-content: center;
     border-radius: 20px;

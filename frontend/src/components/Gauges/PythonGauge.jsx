@@ -5,6 +5,7 @@ import {
   GaugeReferenceArc,
   useGaugeState,
 } from '@mui/x-charts/Gauge';
+import { red } from '@mui/material/colors';
 
 function GaugePointer() {
   const { valueAngle, outerRadius, cx, cy } = useGaugeState();
@@ -38,9 +39,9 @@ export default function PythonPointer() {
       endAngle={110}
       value={34}
     >
-      <GaugeReferenceArc />
+      <GaugeReferenceArc stroke='blue'/>
       <GaugeValueArc />
-      <GaugePointer />
+      <GaugePointer/>
     </GaugeContainer>
   );
 }

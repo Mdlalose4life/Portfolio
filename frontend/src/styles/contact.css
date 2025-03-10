@@ -2,7 +2,7 @@
   width: 70%;
   margin: 0 auto;
   padding: 16px;
-  color: #526d82;
+  color: var(--icons-cl);
   min-width: 320;
 }
 
@@ -57,11 +57,12 @@
 .input-field {
   padding: 18px;
   width: 100%;
-  border: 1px solid #ccc;
-  background-color: #C5CAE9;
+  border: 1px solid var(--menu-bg);
+  background-color: var(--menu-bg);
   border-radius: 5px;
   font-size: 1.6rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: var(--icons-cl);
 
   @media (max-width: 768px) {
     border-radius: 5px;
@@ -76,13 +77,14 @@
 .textarea-field {
   padding: 15px;
   width: 100%;
-  border: 1px solid #ccc;
-  background-color: #C5CAE9;
+  border: 1px solid var(--menu-bg);
+  background-color: var(--menu-bg);
   border-radius: 5px;
   font-size: 1.6rem;
   min-height: 300px;
   resize: vertical;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: var(--icons-cl);
 
   @media (min-width: 768px) {
     max-height: 100px;
@@ -100,8 +102,8 @@
 
 .submit-button {
   padding: 12px 8px;
-  background-color: #526d82;
-  color: white;
+  background-color: var(--Hover--state);
+  color: var(--form--Hover--text);
   font-size: 1.2rem;
   border: none;
   border-radius: 5px;
@@ -117,6 +119,6 @@
 }
 
 .submit-button:hover {
-  background-color: #0f2c42;
+  background-color: var(--menu-bg);
   transform: scale(1.02);
 }

@@ -62,7 +62,7 @@ const Contact = () => {
       <div className="contact-me">
         <Typography variant="h4">Contact Me</Typography>
       </div>
-      <Divider />
+      <Divider/>
       <div className="contact-header">
           <h1>Get in Touch</h1>
         <p>For inquiries, support, or collaboration, please fill out the form below. I’ll get back to you soon!</p>

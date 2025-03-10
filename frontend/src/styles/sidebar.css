@@ -8,7 +8,7 @@
     left: 0;
     padding: 20px;
     width: 200px;
-    background: #C5CAE9;
+    background: var(--menu-bg);
     overflow-y: auto;
     transition: width 0.3s ease;
 }
@@ -50,7 +50,7 @@
 .logo {
     text-align: center;
     padding: 2px;
-    color: #27374d;
+    color: var(--icons-cl);
     align-items: center;
     display: flex;
     gap: 20px;
@@ -76,18 +76,19 @@
     padding: 10px;
     border-radius: 10px;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-    color: #27374d;
+    color: var(--icons-cl);
 }
 
 .menu--list .item:hover {
-    background: #27374d;
-    color: #dde6ed;
+    background: var(--Hover--state);
+    color: var(--Hover--text);
 }
+
 
 /* Add styles for the active class */
 .menu--list .item.active {
-    background: #27374d;
-    color: #dde6ed;
+    background: var(--Hover--state);
+    color: var(--Hover--text);
 }
 
 .menu.collapsed .menu--list .item {

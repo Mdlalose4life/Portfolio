@@ -1,0 +1,36 @@
+.button--wraper{
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  bottom: 0;
+}
+
+.lighter{
+  border: 10px solid;
+  border-radius: 22px;
+  color: white;
+}
+
+.darker{
+  border: 10px solid;
+  border-radius: 22px;
+  color: #5C5C5C;
+}
+
+.pinker{
+  border: 10px solid;
+  border-radius: 22px;
+  color: pink;
+}
+
+.purpler{
+  border: 10px solid;
+  border-radius: 22px;
+  color: purple;
+}
+
+@media (max-width: 768px) {
+  .button--wraper{
+    flex-direction: column;
+  }
+}

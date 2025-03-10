@@ -1,6 +1,6 @@
 /* Cards container */
 .skills--page--tittle {
-    color: #526d82;
+    color: var(--icons-cl);
 }
 
 .skills--container {
@@ -15,7 +15,7 @@
 .skills {
     flex: 3;
     flex: calc(33.333% - 20px);
-    background: #C5CAE9;
+    background: var(--menu-bg);
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -39,23 +39,23 @@
     justify-content: center;
     padding: 20px;
     border-radius: 20px;
-    color: #969393;
+    color: var(--Skills--icons-cl);
 }
 
 .skills--title {
-    background: #ffffffc0;
+    background: var(--Hover--state);
     width: 100%;
     text-align: center;
     padding: 10px 0;
     font-size: 1.4rem;
-    color: #526d82;
+    color: var(--Hover--text);
     border-radius: 10px;
 }
 
 .skills--description {
     position: relative;
     font-size: 14px;
-    color: #526d82;
+    color: var(--Hover--state);
     text-align: center;
     width: 100%;
     padding: 10px 0;

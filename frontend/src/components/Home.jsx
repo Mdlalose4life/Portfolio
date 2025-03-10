@@ -6,6 +6,9 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { ThemeContext } from '../store/ThemeContext';
+
 
 const profile = [
   {
@@ -16,13 +19,14 @@ const profile = [
 ]
 
 const Home = () => {
+    const {theme} = useContext(ThemeContext);
   return (
     <div className='main--profile'>
       <div className='profile--container'>
         {profile.map((item, index) => (
           <div className='profile--image' key={index}>
             <img className='image' src={item.image} alt={item.name} />
-            <div className='profile--name'>
+            <div className={`profile--name ${theme}`}>
               <h2>{item.name}</h2>
               <div>
                 <TypeAnimation

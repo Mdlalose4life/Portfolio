@@ -151,12 +151,12 @@ const About = () => {
       <div className='About--tittle'>
         <Typography variant='h5'>About Me</Typography>
       </div>
-        <Divider />
+        <Divider/>
       <div className='about--me--container'>
         {About_me.map((item, index) => (
           <div className='about--me--card' key={`about-me-${index}`}>
             <Typography variant='h6'>{item.AboutMeName}</Typography>
-            <Divider />
+            <Divider/>
             <div className='description--controller'>
               <p>{item.description}</p>    
             </div>
@@ -171,14 +171,14 @@ const About = () => {
                     <p style={{fontWeight:"bold", fontSize:"1.3rem"}}>{item.name}</p>
                     <p>{item.cert_Name}</p>
                     <p>AI Career Essentials</p> 
-                    <Divider />
+                    <Divider/>
                   </div>
                 ))}
                 {Country.map((item, index)=>(
                   <div className='country--controller' key={index}>
                     <p style={{fontWeight:"bold", fontSize:"1.3rem"}}>{item.name}</p>
                     <p>{item.countyName}</p>
-                    <Divider />
+                    <Divider/>
                   </div>
                 ))}
                 </div>
@@ -189,14 +189,14 @@ const About = () => {
                       <Link to={item.link} target="_blank">
                         <p>{item.GithubName}</p>
                       </Link>
-                      <Divider />
+                      <Divider/>
                     </div>
                     ))}
                     {Availability.map((item, index)=>(
                       <div className='availability--controller' key={index}>
                         <p style={{fontWeight:"bold", fontSize:"1.3rem"}}>{item.name}</p>
                         <p>{item.status}</p>  
-                        <Divider /> 
+                        <Divider/> 
                     </div>
                   ))}
                 </div>    

@@ -1,16 +1,26 @@
-// // eslint-disable-next-line no-unused-vars
-// import React, { useContext } from 'react';
-// import { ThemeContext } from '../store/ThemeContext';
+/* eslint-disable react/prop-types */
+// eslint-disable-next-line no-unused-vars
+import React, { useContext } from 'react';
+import { ThemeContext } from '../store/ThemeContext';
+import "../styles/ThemeToggle.css"
 
-// const ThemeToggleButton = () => {
-//   const { theme, toggleTheme } = useContext(ThemeContext);
+const ThemeToggleButton = ({ isMenuExpanded }) => {
 
-//   return (
-//     <>
-//     <button onClick={toggleTheme}>
-//       Toggle Theme ({theme})
-//     </button>
-//     </>
-//   );
-// };
-// export default ThemeToggleButton
+  const { setTheme } = useContext(ThemeContext);
+
+  return (
+    <div className="button--wraper" style={{
+      display:"flex",
+      flexDirection:isMenuExpanded ? "row" : "column",
+      gap: "10px",
+      justifyContent:"center"
+    }}>
+      <button className="lighter" onClick={() => setTheme('light')} ></button>
+      <button  className="darker" onClick={() => setTheme('dark')}></button>
+      <button  className="pinker" onClick={() => setTheme('pink')}></button>
+      <button className="purpler" onClick={() => setTheme('purple')}></button>
+    </div>
+  );
+};
+
+export default ThemeToggleButton;

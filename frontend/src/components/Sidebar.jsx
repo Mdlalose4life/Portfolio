@@ -4,7 +4,8 @@ import { NavLink } from 'react-router-dom';
 import { BiHome, BiSmile, BiAlignJustify, BiBriefcase, BiChat, BiMenu } from 'react-icons/bi';
 import { LiaSmileBeamSolid } from 'react-icons/lia';
 import '../styles/sidebar.css';
-// import ThemedComponent from './ThemeToggle';
+import ThemeToggleButton from './ThemeToggle';
+import { Divider } from '@mui/material';
 
 const Sidebar = () => {
   const [isExpanded, setIsExpanded] = useState(true);
@@ -47,12 +48,13 @@ const Sidebar = () => {
     )}
     <div className={`menu ${isExpanded ? 'expanded' : 'collapsed'}`}>
       <button className="toggle-button" onClick={toggleSidebar}>
-        <BiMenu />
+        <BiMenu className='Menu--Button'/>
       </button>
       <div className='logo'>
         <LiaSmileBeamSolid className='icon-logo' />
         {isExpanded && <h2>Sbusiso</h2>}
       </div>
+      <Divider/>
       <div className='menu--list'>
         <NavLink to='/' onClick={handleMobileExp} className={({ isActive }) => isActive ? "item active" : "item"}>
           <BiHome className="icon" />
@@ -74,8 +76,9 @@ const Sidebar = () => {
           <BiChat className="icon" />
           {isExpanded && <span>Contact</span>}
         </NavLink>
+        <Divider/>
       </div>
-      {/* <ThemedComponent/> */}
+      <ThemeToggleButton isMenuExpanded={isExpanded}/>
     </div>
     </>
   );

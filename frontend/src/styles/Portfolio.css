@@ -4,7 +4,7 @@
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    color: #526d82;
+    color: var(--icons-cl);
   }
   
   .portfolio--container {
@@ -21,7 +21,7 @@
     box-sizing: border-box;
     padding: 20px;
     text-align: center;
-    border: 1px solid #C5CAE9;
+    border: 1px solid var(--menu-bg);
     border-radius: 8px;
     margin-bottom: 20px;
     transition: transform 0.3s;
