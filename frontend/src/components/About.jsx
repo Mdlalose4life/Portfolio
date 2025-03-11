@@ -149,13 +149,13 @@ const About = () => {
   return (
     <div className='Page--Wrapper'>
       <div className='About--tittle'>
-        <Typography variant='h5'>About Me</Typography>
+        <Typography variant='h4'>About Me</Typography>
       </div>
         <Divider/>
       <div className='about--me--container'>
         {About_me.map((item, index) => (
           <div className='about--me--card' key={`about-me-${index}`}>
-            <Typography variant='h6'>{item.AboutMeName}</Typography>
+            <Typography variant='h5'>{item.AboutMeName}</Typography>
             <Divider/>
             <div className='description--controller'>
               <p>{item.description}</p>    
