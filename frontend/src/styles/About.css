@@ -25,9 +25,15 @@
 }
 
 .description--controller {
-  line-height: 1.7;
-  font-size: small;
+  line-height: 1.4;
+  font-size: 1.4rem;
   margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    line-height: 1.2;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }  
 }
 
 .about--me--card > hr {
@@ -95,6 +101,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  font-size: 1.2rem;
 }
 
 .about--me--card {
@@ -112,6 +119,12 @@
 .description--controller {
   gap: 20px;
   padding-top: 20px;
+
+  @media (max-width: 768px) {
+    padding-top: 6px;
+    gap: 6px;
+  }
+  
 }
 
 .education-and-experience {
@@ -216,6 +229,7 @@
   .cards--info {
     flex-direction: row;
     gap: 20px;
+    padding: 2px;
     align-items: center;
   }
 
@@ -238,11 +252,11 @@
   }
 
   .about--me--card {
-    padding: 15px;
+    padding: 5px;
   }
 
   .description--controller {
-    font-size: 0.9em;
+    font-size: 1.0em;
   }
 
   .button--controller {
@@ -260,9 +274,37 @@
     align-items: center;
   }
 
+  .certificate--controller {
+    & > p{
+      font-size: 1.2rem;
+    }
+  }
+  
+  .github--controller{
+    & > a {
+      font-size: 1.0rem;
+    }
+  }
+
+  .country--controller{
+    & > p {
+      font-size: 1.2rem;
+    }
+
+  .availability--controller{
+    & > p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .cards--and--button--controler {
+    margin-bottom: 8px;
+  }
+
   .cards--info {
     flex-direction: row;
     align-items: center;
+    padding: 2px;
     gap: 20px;
   }
 
@@ -287,11 +329,39 @@
   }
 
   .about--me--card {
-    padding: 15px;
+    padding: 5px;
   }
 
   .description--controller {
-    font-size: 0.8em;
+    font-size: 1.09em;
+  }
+
+  .certificate--controller {
+    & > p{
+      font-size: 1.2rem;
+    }
+  }
+
+  .country--controller {
+    & > p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .cards--and--button--controler {
+    margin-bottom: 8px;
+  }
+
+  .availability--controller{
+    & > p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  .github--controller{
+    & > a {
+      font-size: 1.0rem;
+    }
   }
 
   .button--controller {
@@ -312,6 +382,7 @@
   .cards--info {
     flex-direction: row;
     align-items: center;
+    padding: 2px;
     gap: 50px;
   }
 
@@ -335,5 +406,4 @@
     padding: 10px;
   }
 }
-
-
+}
