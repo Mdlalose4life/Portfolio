@@ -14,30 +14,51 @@
 }
 
 .image {
-  height: 40%;
-  width: 40%;
+  height: 50%;
+  width: 50%;
   border-radius: 50%;
   margin: auto;
+
+  @media (max-width: 768px) {
+    height: 40%;
+    width: 100%;
+  }
 }
 
 .profile--name.light {
   color: #526d82;
   margin-top: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 1.6rem;
+  }
 }
 
 .profile--name.dark {
   color: white;
   margin-top: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 1.6rem;
+  }
 }
 
 .profile--name.pink {
   color: #a73b74;
   margin-top: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 1.6rem;
+  }
 }
 
 .profile--name.purple {
   color:#180118;
   margin-top: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 1.6rem;
+  }
 }
 
 .icons{
@@ -47,4 +68,8 @@
   font-size: 2rem;
   padding-top: 20px;
   transition: 0.10s ease-in-out;
+  
+  @media (max-width: 768px) {
+    font-size: 2.8rem;
+  }
 }
