@@ -52,7 +52,7 @@ const Sidebar = () => {
       </button>
       <div className='logo'>
         <LiaSmileBeamSolid className='icon-logo' />
-        {isExpanded && <h2>Sbusiso</h2>}
+        {isExpanded && <h2 className='Name'>Sbusiso</h2>}
       </div>
       <Divider/>
       <div className='menu--list'>

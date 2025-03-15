@@ -47,6 +47,15 @@
     margin-bottom: 20px;
 }
 
+.Name{
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.Menu--Button{
+    font-size: 2.0rem;
+}
+
 .logo {
     text-align: center;
     padding: 2px;
@@ -58,6 +67,10 @@
 
 .logo .icon-logo {
     font-size: 1.4rem;
+
+    @media (max-width: 769px) {
+        font-size: 1.8rem;
+   }
 }
 
 .menu--list {
@@ -77,6 +90,10 @@
     border-radius: 10px;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
     color: var(--icons-cl);
+
+    @media (max-width: 769px) {
+         font-size: 1.8rem;
+    }
 }
 
 .menu--list .item:hover {
