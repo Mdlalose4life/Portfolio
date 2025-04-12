@@ -102,7 +102,7 @@ const ShaperTimeline = [{
     date: "Jun 2024 - Present",
     desc: (
       <div className="description--controller">
-        {/* <ul>
+        <ul>
           <li> Develop and maintain scalable applications, such as the <a href="https://developer.ayoba.me/" target="_blank">Developer Portal </a> 
            and <a href="https://shop.ayoba.me" target="_blank"> Ayoba Marketplace</a>, for Ayoba, while collaborating with third-party companies 
           for backend integration and support. 
@@ -122,7 +122,7 @@ const ShaperTimeline = [{
           <br/>
           <li>Collaborate with cross-functional teams to gather and analyze requirements for seamless feature integration.
         </li>
-      </ul> */}
+      </ul>
     </div>
     )
   }
