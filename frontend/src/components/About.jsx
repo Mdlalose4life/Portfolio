@@ -60,6 +60,11 @@ const Availability = [
       school: "ALX (Hulbetortorn School)",
       date: "2024",
     },
+    {
+      title: "Professional Foundations",
+      school: "ALX (Hulbetortorn School)",
+      date: "2025",
+    },
   ];
 
 const LMtimeline = [
