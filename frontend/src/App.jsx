@@ -29,23 +29,44 @@ const ScrollWrapper = ({ children }) => {
 
   // Navigation handler
   useEffect(() => {
+    let startY = 0;
+  
     const handleWheel = (e) => {
       if (scrollTimeout.current) return;
-
+  
       const direction = e.deltaY > 0 ? 'down' : 'up';
       scrollDirectionRef.current = direction;
-
+  
+      checkAndNavigate(direction);
+    };
+  
+    const handleTouchStart = (e) => {
+      startY = e.touches[0].clientY;
+    };
+  
+    const handleTouchEnd = (e) => {
+      if (scrollTimeout.current) return;
+  
+      const endY = e.changedTouches[0].clientY;
+      const deltaY = startY - endY;
+      const direction = deltaY > 0 ? 'down' : 'up';
+      scrollDirectionRef.current = direction;
+  
+      checkAndNavigate(direction);
+    };
+  
+    const checkAndNavigate = (direction) => {
       const scrollElement = document.documentElement || document.body;
       const scrollTop = scrollElement.scrollTop;
       const scrollHeight = scrollElement.scrollHeight;
       const clientHeight = scrollElement.clientHeight;
-
+  
       const atBottom = scrollTop + clientHeight >= scrollHeight - 5;
       const atTop = scrollTop <= 5;
-
+  
       const shouldNavigate =
         (direction === 'down' && atBottom) || (direction === 'up' && atTop);
-
+  
       if (shouldNavigate) {
         const nextRoute = getNextRoute(location.pathname, direction, routes);
         if (nextRoute !== location.pathname) {
@@ -56,18 +77,23 @@ const ScrollWrapper = ({ children }) => {
         }
       }
     };
-
+  
     window.addEventListener('wheel', handleWheel);
-    return () => window.removeEventListener('wheel', handleWheel);
+    window.addEventListener('touchstart', handleTouchStart, { passive: true });
+    window.addEventListener('touchend', handleTouchEnd, { passive: true });
+  
+    return () => {
+      window.removeEventListener('wheel', handleWheel);
+      window.removeEventListener('touchstart', handleTouchStart);
+      window.removeEventListener('touchend', handleTouchEnd);
+    };
   }, [location.pathname, navigate]);
 
-  // Scroll after navigation based on direction
   useEffect(() => {
     const direction = scrollDirectionRef.current;
     if (direction === 'down') {
       window.scrollTo({ top: 0, behavior: 'auto' });
     } else if (direction === 'up') {
-      // Wait a tick to ensure page is rendered
       setTimeout(() => {
         const scrollElement = document.documentElement || document.body;
         const scrollHeight = scrollElement.scrollHeight;
