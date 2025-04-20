@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { BiHome, BiSmile, BiAlignJustify, BiBriefcase, BiChat, BiMenu } from 'react-icons/bi';
 import { LiaSmileBeamSolid } from 'react-icons/lia';
 import '../styles/sidebar.css';
-import ThemeToggleButton from './ThemeToggle';
+import ThemeToggleButton from './theme/ThemeToggle';
 import { Divider } from '@mui/material';
 
 const Sidebar = () => {

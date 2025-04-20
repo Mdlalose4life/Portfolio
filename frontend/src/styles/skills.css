@@ -55,7 +55,7 @@
 .skills--description {
     position: relative;
     font-size: 14px;
-    color: var(--Hover--state);
+    color: var(--);
     text-align: center;
     width: 100%;
     padding: 10px 0;

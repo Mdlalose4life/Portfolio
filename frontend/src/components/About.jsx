@@ -4,13 +4,11 @@ import { Typography} from '@mui/material';
 import { Link } from 'react-router-dom';
 import '../styles/About.css';
 import Divider from '@mui/material/Divider';
-import PythonPointer from './Gauges/PythonGauge';
-import SharpPoiner from './Gauges/SharpGauge';
-import ScriptGuge from './Gauges/ScriptGauge';
 import Button from '@mui/material/Button';
 import { HiAcademicCap } from "react-icons/hi2";
 import Timeline from "./Timelines/Timeline";
 import Exptimeline from "./Timelines/Exptimeline";
+import ThemedIcons from "./theme/ThemedIcon";
 
 const About_me = [
   {
@@ -216,17 +214,30 @@ const About = () => {
           </div>
           <div className="Gauges--wrapper">
             <div className='Gauges--controller'>
-              <div className='C--gauge'>
-                <PythonPointer />
-                  Python (35%)
+              <div className="python--gauge">
+                <ThemedIcons
+                  tech="react"
+                  size={170}
+                  alt="react Logo"
+                />
+                React
               </div>
+                
               <div className='python--gauge'>
-                <SharpPoiner />
-                  Javascript (50%)
+                <ThemedIcons
+                  tech="next"
+                  size={170}
+                  alt="next Logo"
+                />
+                Next.js
               </div>
               <div className='Java--gauge'>
-                <ScriptGuge/>
-                  Next.js (60%)
+                <ThemedIcons
+                  tech="express"
+                  size={170}
+                  alt="expess Logo"
+                />
+                  Express
               </div>
             </div>
           </div>

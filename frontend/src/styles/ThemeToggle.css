@@ -36,6 +36,11 @@
   } */
 }
 
+.theme_id {
+  font-size: 1.2rem;
+  color: var(--icons-cl);
+}
+
 
 
 @media (max-width: 768px) {

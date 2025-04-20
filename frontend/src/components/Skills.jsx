@@ -12,7 +12,7 @@ const skills = [
   {
     title: 'Programming Languages',
     icons: <CiDesktop />,
-    des: 'C#, shell, C-Programming, Python, Javascript, ASP.NET and Ruby'
+    des: 'Python, Javascript'
   },
   {
     title: 'Frotend',
@@ -22,17 +22,17 @@ const skills = [
   {
     title: 'Database',
     icons: <FaDatabase />,
-    des: 'MySQL, SQLite Microsoft SQL Server, Mongodb, Redis, and Strapi'
+    des: 'MySQL, Mongodb, Redis, and Strapi'
   },
   {
     title: 'Devops',
     icons: <SiAzuredevops />,
-    des: 'Linux/Unix commands, Datadog, puppet, Docker, and Azure'
+    des: 'Linux/Unix commands, puppet, and Docker'
   },
   {
     title: 'Frameworks',
     icons: <FaPhoenixFramework />,
-    des: 'Django, flask, React, .NET Framework and Express'
+    des: 'Django, flask, React, Next.js and Express'
   },
   {
     title: 'Version Control',
