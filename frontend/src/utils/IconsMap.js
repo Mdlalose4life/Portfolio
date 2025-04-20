@@ -1,7 +1,7 @@
 import ReactLight from "../assets/icons/react/Vanilla_react.svg"
 import ReactDark from "../assets/icons/react/White_react.svg"
-import ReactPink from "../assets/icons/react/Pink_react.svg"
-import ReactPurple from "../assets/icons/react/Puple_react.svg"
+import ReactPink from "../assets/icons/react/Puple_react.svg"
+import ReactPurple from "../assets/icons/react/Pink_react.svg"
 
 import ExpressLight from "../assets/icons/express/Vanilla-express.svg"
 import ExpressDark from "../assets/icons/express/White_express.svg"
