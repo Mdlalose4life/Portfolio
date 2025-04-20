@@ -9,7 +9,7 @@ const portfolio = [
   {
     project: spiritlink,
     project_title: 'SpiritLink',
-    link: 'https://spiritlink.onrender.com/'
+    link: 'https://spiritlink02.vercel.app/'
   },
   {
     project: mindpal,
