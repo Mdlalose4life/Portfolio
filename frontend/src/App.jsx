@@ -46,14 +46,23 @@ const ScrollWrapper = ({ children }) => {
   
     const handleTouchEnd = (e) => {
       if (scrollTimeout.current) return;
-  
+    
       const endY = e.changedTouches[0].clientY;
       const deltaY = startY - endY;
+    
+      const SWIPE_THRESHOLD = 50;
+      if (Math.abs(deltaY) < SWIPE_THRESHOLD) return;
+    
+      const touchedElement = e.target;
+      const tag = touchedElement.tagName.toLowerCase();
+      if (['a', 'button', 'input', 'textarea', 'select', 'label'].includes(tag)) return;
+    
       const direction = deltaY > 0 ? 'down' : 'up';
       scrollDirectionRef.current = direction;
-  
+    
       checkAndNavigate(direction);
     };
+    
   
     const checkAndNavigate = (direction) => {
       const scrollElement = document.documentElement || document.body;
