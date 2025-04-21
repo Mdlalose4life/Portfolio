@@ -8,6 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { ThemeContext } from '../store/ThemeContext';
+import ScrollHint from './ScrollHint';
 
 
 const profile = [
@@ -74,6 +75,7 @@ const Home = () => {
                   <div>
                   <FaWhatsapp />
                   </div>
+                  <ScrollHint/>
                 </div>
               </div>
             </div>
