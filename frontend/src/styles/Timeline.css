@@ -56,6 +56,18 @@
   .timeline-item:last-child .timeline-cycle::after {
     display: none;
   }
+
+  @media (max-width: 768px) {
+    .timeline-content {
+      & > h4 {
+        font-size: 1.6rem;
+      }
+
+      & > p {
+        font-size: 1.4rem;
+      }
+    }
+  }
   
   /* Timeline Content */
   /* .timeline-content {

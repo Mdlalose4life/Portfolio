@@ -18,7 +18,7 @@
     
     @media (max-width: 768px) {
         left: 15px;
-        top: 8%;
+        top: 6%;
     }
   }
 
@@ -55,4 +55,18 @@
   
   .timeline-item:last-child .timeline-cycle::after {
     display: none;
+  }
+
+  @media (max-width: 768px) {
+    .timeline-content {
+      & > h4 {
+        font-size: 1.6rem;
+      }
+      & > div {
+        font-size: 1.4rem;
+      }
+      & > ul {
+        font-size: 1.4rem;
+      }
+    }
   }

@@ -124,6 +124,9 @@
   @media (max-width: 768px) {
     padding-top: 6px;
     gap: 6px;
+    & > p {
+      font-size: 1.4rem;
+    }
   }
   
 }

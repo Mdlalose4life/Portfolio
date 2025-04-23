@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { ThemeContext } from '../store/ThemeContext';
 import ScrollHint from './ScrollHint';
-import { colors } from '@mui/material';
+
 
 
 const profile = [
