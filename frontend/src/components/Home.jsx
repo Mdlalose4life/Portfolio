@@ -9,12 +9,13 @@ import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { ThemeContext } from '../store/ThemeContext';
 import ScrollHint from './ScrollHint';
+import { colors } from '@mui/material';
 
 
 const profile = [
   {
     image: img,
-    name: 'Sbusiso Blessing Mdlalose',
+    name: 'I am Sbusiso Blessing Mdlalose',
     link: 'https://www.linkedin.com/in/sbusiso-blessing-1894591a0'
   }
 ]
@@ -26,40 +27,45 @@ const Home = () => {
       <div className='profile--container'>
         {profile.map((item, index) => (
           <div className='profile--image' key={index}>
-            <img className='image' src={item.image} alt={item.name} />
+            <div className='pic--and--name'>
+              <div className='lhsSection'></div>
+              <img className='image' src={item.image} alt={item.name} />
+              <div className='rhssection'>{item.name}—a Full Stack Developer with a passion for crafting sleek, scalable solutions using React, Next.js, and Express.</div>              
+            </div>
             <div className={`profile--name ${theme}`}>
-              <h2>{item.name}</h2>
               <div>
+                <div className='Theme--words'>
                 <TypeAnimation
                   preRenderFirstString={true}
                   sequence={[
                     500,
-                    'Crafting lightning-fast apps with Next.js',
-                    1000,
-                    'Making UIs pop with React animations',
-                    1000,
-                    'Building sleek and snappy pages with Next.js',
-                    1000,
-                    'Mastering server-side rendering like a pro',
-                    1000,
-                    'State management magic with React hooks',
-                    500,
-                    'Optimizing components for buttery-smooth performance',
-                    1000,
-                    'Taming APIs with Next.js routes',
-                    1000,
-                    'Spicing up the frontend with Tailwind & Next.js',
-                    1000,
-                    'Deploy apps like a boss',
-                    1000,
-                    'Keeping things dynamic with React state',
-                    500,
-                    'Fetching data smarter, not harder with SWR',
+                    'Think sharp. Solve smarter.',
+                    2000,
+                    'Speak clear. Lead strong.',
+                    2000,
+                    'Own the room. Own the code.',
+                    2000,
+                    'Teamwork makes the deploy work.',
+                    2000,
+                    'Lead with purpose. Deliver with pride.',
+                    2000,
+                    'Stay cool. Act pro.',
+                    2000,
+                    'Adapt fast. Learn faster.',
+                    2000,
+                    'Confidence in every commit.',
+                    2000,
+                    'Results-driven. People-powered.',
+                    2000,
+                    'Communicate. Collaborate. Code.',
+                    2000,
+                    'Soft skills. Hard impact.',
                   ]}
                   speed={50}
                   style={{ fontSize: '1em' }}
                   repeat={Infinity}
                 />
+                </div>
                 <div className='icons'>
                   <div className='linkedin--icon'>
                     <Link to={item.link} target="_blank" style={{ textDecoration: 'none', color: 'inherit'}}>

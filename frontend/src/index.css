@@ -6,6 +6,30 @@
     box-sizing: border-box;
     font-family: Quicksand;;
 }
+/* RHS Border Color  */
+:root {
+    --RHS--BD--Cl: #6c63ff;
+}
+
+body.dark {
+    --RHS--BD--Cl: #b5b1fb;
+}
+
+body.pink {
+    --RHS--BD--Cl:  #F7A8C4; ;
+}
+
+body.purple {
+    --RHS--BD--Cl: #e0aaff;
+}
+
+/* Background Body */
+body.light {
+    background: #C5CAE9;
+    padding: 5px;
+    overflow-x: hidden;
+}
+
 
 
 /* LHS BG colos */

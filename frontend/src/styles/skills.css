@@ -24,6 +24,7 @@
     gap: 20px;
     transition: 0.10s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 8px solid var(--RHS--BD--Cl)
 }
 
 .skills:hover {
@@ -69,8 +70,8 @@
     width: 0;
     height: 0;
     margin-left: -50%;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
+    /* border-left: 10px solid transparent; */
+    /* border-right: 10px solid transparent; */
     border-top: 10px solid #C5CAE9;
     transform: translateX(-50%);
 }
