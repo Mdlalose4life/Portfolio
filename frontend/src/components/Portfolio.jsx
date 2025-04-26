@@ -3,7 +3,6 @@ import mindpal from '../assets/mindpal.png';
 import Divider from '@mui/material/Divider';
 import '../styles/Portfolio.css'
 import { Link } from 'react-router-dom';
-import { Typography} from '@mui/material';
 
 const portfolio = [
   {
@@ -21,7 +20,7 @@ const portfolio = [
 const Portfolio = () => {
   return (
     <div className='portfolio--page--tile'>
-      <Typography variant='h5'>Portfolio</Typography>
+      <h1>Portfolio</h1>
       <Divider/>
       <div className='portfolio--container'>
         {portfolio.map((item) => (

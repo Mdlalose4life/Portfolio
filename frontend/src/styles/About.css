@@ -1,6 +1,11 @@
 .Page--Wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: var(--icons-cl);
   margin: 0 auto;
+  max-width: 80%;
+
 }
 
 .About--tittle {
@@ -12,7 +17,7 @@
 }
 
 .about--me--container {
-  display: flex;
+  /* display: flex; */
   flex-direction: column; 
   /* gap: 20px; */
   margin-top: 20px;
@@ -43,7 +48,7 @@
 .info--Controller {
   display: flex;
   flex-direction: row;
-  gap: 90px;
+  gap: 60px;
   margin-bottom: 20px;
   width: fit-content;
 }
@@ -83,11 +88,59 @@
   align-items: center;
 }
 
+.SoftSkills-controller {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.softskills-heading {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.list--controller {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 26px;
+  background: var(--menu-bg);
+  font-size: 1.4rem;
+  padding: 15px;
+  line-height: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-left: 8px solid var(--RHS--BD--Cl);
+}
+
+.list--controller > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 3rem;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.Gauges--wrapper{
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.Skills--heading{
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  padding-bottom: 1rem;
+}
+
 .Gauges--controller {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 26px;
+  gap: 58px;
   background: var(--menu-bg);
   padding: 15px;
   border-radius: 10px;
@@ -132,11 +185,12 @@
 }
 
 .education-and-experience {
-  flex: 3;
-  flex: calc(33.333% - 20px);
   display: flex;
-  gap: 50px;
-  width: 100%;
+  flex-direction: row;
+  gap: 60px;
+  padding-top: 10px;
+  width: fit-content;
+  padding-left: 10px;
 }
 
 .content {
@@ -151,7 +205,7 @@
   padding: 20px;
   border-radius: 20px;
   flex: 1;
-  width: 370px;
+  width: 430px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-left: 8px solid var(--RHS--BD--Cl);
 }
@@ -159,6 +213,7 @@
 .Education--title {
   display: flex;
   gap: 6px;
+  padding-bottom: 10px;
 }
 
 .edication--icon {
@@ -214,14 +269,11 @@
 .experience--title {
   display: flex;
   gap: 6px;
+  padding-bottom: 10px;
 }
 
 .experience--icon {
   font-size: 2rem;
-}
-
-.description--controller {
-  padding-left: 20px;
 }
 
 /* Media Queries for Responsiveness */

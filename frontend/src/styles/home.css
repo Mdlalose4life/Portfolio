@@ -45,7 +45,6 @@
   border-radius: 16px;
   font-size: 4.2rem;
   color: var(--icons-cl);
-  font-weight: 600;
   text-align: left;
   transition: background 0.3s ease;
 }

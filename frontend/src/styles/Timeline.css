@@ -4,12 +4,13 @@
     flex-direction: column;
     position: relative;
     padding: 1rem;
+    line-height: 2rem;
   }
 
   .education-vertical-line {
     position: absolute;
     left: 17px;
-    top: 12%;
+    top: 8%;
     bottom: 12.5%;
     width: 4px;
     background-color: var(--connection--line);
@@ -18,7 +19,7 @@
 
     @media (max-width: 768px) {
       left: 13.5px;
-      top: 12%;
+      top: 9%;
     }
   } 
 

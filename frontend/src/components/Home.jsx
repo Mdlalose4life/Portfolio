@@ -3,8 +3,8 @@ import img from '../assets/Sbu.jpg'
 import { TypeAnimation } from 'react-type-animation';
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { MdOutlineMailOutline } from "react-icons/md";
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { ThemeContext } from '../store/ThemeContext';
@@ -30,7 +30,7 @@ const Home = () => {
             <div className='pic--and--name'>
               <div className='lhsSection'></div>
               <img className='image' src={item.image} alt={item.name} />
-              <div className='rhssection'>{item.name}—a Full Stack Developer with a passion for crafting sleek, scalable solutions using React, Next.js, and Express.</div>              
+              <div className='rhssection'><strong>{item.name}</strong> —a <strong>Full Stack Developer</strong> with a passion for crafting sleek, scalable solutions using <strong>React, Next.js, and Express</strong>.</div>              
             </div>
             <div className={`profile--name ${theme}`}>
               <div>
@@ -76,10 +76,10 @@ const Home = () => {
                     <FaInstagram/>
                   </div>
                   <div className='facaebook--icon'>
-                    <FaFacebook />
+                  <FaGithub />
                   </div>
                   <div>
-                  <FaWhatsapp />
+                  <MdOutlineMailOutline />
                   </div>
                   <ScrollHint/>
                 </div>

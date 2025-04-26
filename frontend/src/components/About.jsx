@@ -1,6 +1,5 @@
 import {useEffect, useState} from "react"
 import { HiMiniPresentationChartLine } from "react-icons/hi2";
-import { Typography} from '@mui/material';
 import { Link } from 'react-router-dom';
 import '../styles/About.css';
 import Divider from '@mui/material/Divider';
@@ -12,124 +11,133 @@ import ThemedIcons from "./theme/ThemedIcon";
 
 const About_me = [
   {
-    AboutMeName: 'Sbusiso Mdlalose',
-    description: 'Full Stack developer skilled in React, building sleek, scalable, and user-focused web interfaces with reusable components and modern design principles.'
+    description: ' '
   }
 ];
 
-const Certficates = [
-  {
-    name: 'Certficate :',
-    cert_Name: 'Software Engineering' 
-  }
-  ];
-const Country = [
-  {
-    name: 'Country:',
-    countyName: 'South Africa'
-  }];
+// const Certficates = [
+//   {
+//     name: 'Certficate :',
+//     cert_Name: 'Software Engineering' 
+//   }
+//   ];
+// const Country = [
+//   {
+//     name: 'Country:',
+//     countyName: 'South Africa'
+//   }];
 
-const Github = [
-  {
-    name: 'Github:',
-    GithubName: 'Github',
-    link: 'https://github.com/Mdlalose4life'
-  }];
+// const Github = [
+//   {
+//     name: 'Github:',
+//     GithubName: 'Github',
+//     link: 'https://github.com/Mdlalose4life'
+//   }];
 
-const Availability = [
-  {
-    name: 'Avalability:',
-    status: 'Immediately',
-  }];
+// const Availability = [
+//   {
+//     name: 'Avalability:',
+//     status: 'Immediately',
+//   }];
 
   const timelineItems = [
+    {
+      title: "Professional Foundations",
+      school: "ALX Africa",
+      date: "2025",
+    },
+    {
+      title: "AI Career Essentials",
+      school: "ALX Africa",
+      date: "2024",
+    },
+    {
+      title: "Software Engineering",
+      school: "ALX Africa",
+      date: "2023",
+    },
     {
       title: "Matric (Maths And Science)",
       school: "Duck Pond's High School",
       date: "2016",
     },
+  ];  
+
+  const ShaperTimeline = [
     {
-      title: "Software Engineering",
-      school: "ALX (Hulbetortorn School)",
-      date: "2023",
-    },
-    {
-      title: "AI Career Essentials",
-      school: "ALX (Hulbetortorn School)",
-      date: "2024",
-    },
-    {
-      title: "Professional Foundations",
-      school: "ALX (Hulbetortorn School)",
-      date: "2025",
-    },
+      companyName: "Shaper (The Digital Academy) - Junior Full Stack Software Developer",
+      date: "Jun 2024 - Present",
+      desc: (
+        <div className="description--controller">
+          <ul>
+            <li>
+              Develop and maintain scalable applications, such as the{" "}
+              <a href="https://developer.ayoba.me/" target="_blank">Developer Portal</a> and{" "}
+              <a href="https://shop.ayoba.me" target="_blank">Ayoba Marketplace</a>, for Ayoba, 
+              while collaborating with third-party companies for backend integration and support.
+            </li>
+            <br />
+            <li>
+              Implement the designs of Ayoba Developer Portal to streamline developer onboarding and enhance the user experience.
+            </li>
+            <br />
+            <li>
+              Leverage Agile methodologies to improve project timelines and ensure alignment with stakeholder requirements.
+            </li>
+            <br />
+            <li>
+              Build reusable components and modular architecture for web applications, increasing development efficiency by 25%.
+            </li>
+            <br />
+            <li>
+              Conduct extensive testing and debugging to ensure high application performance and security.
+            </li>
+            <br />
+            <li>
+              Collaborate with cross-functional teams to gather and analyze requirements for seamless feature integration.
+            </li>
+          </ul>
+        </div>
+      )
+    }
   ];
-
-const LMtimeline = [
-  {
-    companyName: "LM Studio",
-    date: "Jan 2023 - Jan 2024",
-    desc: (
-      <div className="description--controller">
-        <ul>
-          <li>Developed and maintained software applications using Django.</li>
-            <br/>
-          <li>Assisted in the implementation of Agile methodologies, 
-            improving project delivery times by 30%.</li>
-            <br/>
-          <li>Provided application support, conducted unit, 
-            regression, and integration testing using pytest 
-            and unittest to ensure software quality.
-          </li>
-            <br/>
-          <li>Implemented Infrastructure as Code (IaC) practices using 
-              erraform and Ansible to streamline deployment processes.
-          </li>
-            <br/>
-          <li>Collaborated with senior team members to gather and 
-              analyze requirements, leading to successful feature 
-              implementations.
-          </li>
-            <br/>
-          <li>Optimized application performance, reducing server
-            response time by 40%.
-          </li>
-        </ul>
-      </div>
-    )
-  },
-];
-
-const ShaperTimeline = [{
-    companyName: "Shaper (The Digital Academy)",
-    date: "Jun 2024 - Present",
-    desc: (
-      <div className="description--controller">
-        <ul>
-          <li> Develop and maintain scalable applications, such as the <a href="https://developer.ayoba.me/" target="_blank">Developer Portal </a> 
-           and <a href="https://shop.ayoba.me" target="_blank"> Ayoba Marketplace</a>, for Ayoba, while collaborating with third-party companies 
-          for backend integration and support. 
-          </li>
-            <br/>
-          <li> Implement the designs of Ayoba Developer Portal to streamline developer onboarding and enhance the user experience. 
-          </li>
-            <br/>
-          <li>Leverage Agile methodologies to improve project timelines and ensure alignment with stakeholder requirements.
-          </li>
-            <br/>
-          <li> Build reusable components and modular architecture for web applications, increasing development efficiency by 25%.
-          </li>
-          <br/>
-          <li> Conduct extensive testing and debugging to ensure high application performance and security.
-          </li>
-          <br/>
-          <li>Collaborate with cross-functional teams to gather and analyze requirements for seamless feature integration.
-        </li>
-      </ul>
-    </div>
-    )
-  }
-];
+  
+  const LMtimeline = [
+    {
+      companyName: "LM Studio - Junior Full Stack Software Developer",
+      date: "Jan 2023 - Jan 2024",
+      desc: (
+        <div className="description--controller">
+          <ul>
+            <li>Developed and maintained software applications using Django.</li>
+            <br />
+            <li>
+              Assisted in the implementation of Agile methodologies, 
+              improving project delivery times by 30%.
+            </li>
+            <br />
+            <li>
+              Provided application support, conducted unit, regression, and integration testing using pytest 
+              and unittest to ensure software quality.
+            </li>
+            <br />
+            <li>
+              Implemented Infrastructure as Code (IaC) practices using Terraform and Ansible to streamline deployment processes.
+            </li>
+            <br />
+            <li>
+              Collaborated with senior team members to gather and analyze requirements, 
+              leading to successful feature implementations.
+            </li>
+            <br />
+            <li>
+              Optimized application performance, reducing server response time by 40%.
+            </li>
+          </ul>
+        </div>
+      )
+    }
+  ];  
 
 const About = () => {
   const [stopped, setStopped] = useState(false);
@@ -152,23 +160,42 @@ const About = () => {
   return (
     <div className='Page--Wrapper'>
       <div className='About--tittle'>
-        <Typography variant='h4'>About Me</Typography>
+        <h1>About Me</h1>
       </div>
         <Divider/>
       <div className='about--me--container'>
         {About_me.map((item, index) => (
           <div className='about--me--card' key={`about-me-${index}`}>
-            <Typography variant='h5'>{item.AboutMeName}</Typography>
-            <Divider/>
             <div className='description--controller'>
-              <p>{item.description}</p>    
+              Full Stack Developer skilled in React, delivering scalable and user-focused 
+              web applications with clean, reusable components. Known for dependability, 
+              flexibility, strong problem-solving abilities, and clear communication throughout 
+              the development lifecycle.
+              {/* <p>{item.description}</p>     */}
             </div>
           </div>
         ))}
         <div className='info--Controller'>
           <div className='cards--and--button--controler'>
             <div className='cards--info'>
-              <div className='certificate--and--country--controler'>
+            <div className="SoftSkills-controller">
+            <div className="softskills-heading">Soft Skills</div>
+            <div className="list--controller">
+              <ul>
+                <li>Dependability</li>
+                <li> Flexibility</li>
+                <li> Problem-solving</li>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li> Adaptability</li>
+                <li> Emotional intelligence </li>
+                <li>Time management</li>
+              </ul>
+            </div>
+          </div>
+
+
+              {/* <div className='certificate--and--country--controler'>
                 {Certficates.map((item, index)=>(
                   <div className='certificate--controller' key={item.id || index}>
                     <p style={{fontWeight:"bold", fontSize:"1.3rem"}}>{item.name}</p>
@@ -202,7 +229,7 @@ const About = () => {
                         <Divider/> 
                     </div>
                   ))}
-                </div>    
+                </div>     */}
             </div>
             <div className='button--controller'>
               <Link to="/contact" >
@@ -213,11 +240,12 @@ const About = () => {
             </div> 
           </div>
           <div className="Gauges--wrapper">
+            <div className="Skills--heading">Most Proficiant on: </div>
             <div className='Gauges--controller'>
               <div className="python--gauge">
                 <ThemedIcons
                   tech="react"
-                  size={170}
+                  size={150}
                   alt="react Logo"
                 />
                 React
@@ -226,7 +254,7 @@ const About = () => {
               <div className='python--gauge'>
                 <ThemedIcons
                   tech="next"
-                  size={170}
+                  size={150}
                   alt="next Logo"
                 />
                 Next.js
@@ -234,7 +262,7 @@ const About = () => {
               <div className='Java--gauge'>
                 <ThemedIcons
                   tech="express"
-                  size={170}
+                  size={150}
                   alt="expess Logo"
                 />
                   Express
@@ -267,23 +295,23 @@ const About = () => {
               <h2>Experience</h2>
             </div>
             <div className='experience--card--controller'>
-              <div className='Experience--title'>
-                <h3>Junior Software Developer</h3>
-              </div>
-              <div className='vertical-line '>
-                <div className='content'>
-                  <div className='componany-name--and--date--controller'>
-                    <Exptimeline items={LMtimeline}/>
-                  </div>
-                </div>
-              </div>
-              <div className='Experience--title'>
+              {/* <div className='Experience--title'>
                 <h3>Junior Full Stack Software Developer</h3>
-              </div>
+              </div> */}
               <div className='vertical-line '>
                 <div className='content'>
                   <div className='componany-name--and--date--controller'>
                     <Exptimeline items={ShaperTimeline}/>
+                  </div>
+                </div>
+              </div>
+              {/* <div className='Experience--title'>
+                <h3>Junior Software Developer</h3>
+              </div> */}
+              <div className='vertical-line '>
+                <div className='content'>
+                  <div className='componany-name--and--date--controller'>
+                    <Exptimeline items={LMtimeline}/>
                   </div>
                 </div>
               </div>

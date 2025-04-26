@@ -1,5 +1,4 @@
 import Divider from '@mui/material/Divider';
-import { Typography } from '@mui/material';
 import { CiDesktop } from "react-icons/ci";
 import { SiAzuredevops } from "react-icons/si";
 import { IoCodeSlashSharp } from "react-icons/io5";
@@ -44,7 +43,7 @@ const skills = [
 const Skills = () => {
   return (
     <div className='skills--page--tittle'>
-      <Typography variant='h4'>Skills</Typography>
+      <h1>Skills</h1>
       <Divider />
       <div className='skills--container'>
         {skills.map((item, index) => (

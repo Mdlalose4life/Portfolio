@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "../styles/contact.css";
 import Divider from '@mui/material/Divider';
-import { Typography } from '@mui/material';
 import { PropagateLoader } from 'react-spinners'
 import {ToastContainer, toast} from 'react-toastify'
 
@@ -60,12 +59,12 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <div className="contact-me">
-        <Typography variant="h4">Contact Me</Typography>
+        <h1>Contact Me</h1>
       </div>
       <Divider/>
       <div className="contact-header">
-          <h1>Get in Touch</h1>
-        <p>For inquiries, support, or collaboration, please fill out the form below. I’ll get back to you soon!</p>
+          <h2>Get in Touch</h2>
+        <p>For inquiries, support, or collaboration, please fill out the form below. I’ll get back to you soon! </p>
       </div>
       <form className="contact-form" onSubmit={handleSubmit}>
         <div className="input-group">
