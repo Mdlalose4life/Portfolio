@@ -17,53 +17,28 @@ const About_me = [
   }
 ];
 
-// const Certficates = [
-//   {
-//     name: 'Certficate :',
-//     cert_Name: 'Software Engineering' 
-//   }
-//   ];
-// const Country = [
-//   {
-//     name: 'Country:',
-//     countyName: 'South Africa'
-//   }];
-
-// const Github = [
-//   {
-//     name: 'Github:',
-//     GithubName: 'Github',
-//     link: 'https://github.com/Mdlalose4life'
-//   }];
-
-// const Availability = [
-//   {
-//     name: 'Avalability:',
-//     status: 'Immediately',
-//   }];
-
-  const timelineItems = [
-    {
-      title: "Professional Foundations",
-      school: "ALX Africa",
-      date: "2025",
-    },
-    {
-      title: "AI Career Essentials",
-      school: "ALX Africa",
-      date: "2024",
-    },
-    {
-      title: "Software Engineering",
-      school: "ALX Africa",
-      date: "2023",
-    },
-    {
-      title: "Matric (Maths And Science)",
-      school: "Duck Pond's High School",
-      date: "2016",
-    },
-  ];  
+const timelineItems = [
+  {
+    title: "Professional Foundations",
+    school: "ALX Africa",
+    date: "2025",
+  },
+  {
+    title: "AI Career Essentials",
+    school: "ALX Africa",
+    date: "2024",
+  },
+  {
+    title: "Software Engineering",
+    school: "ALX Africa",
+    date: "2023",
+  },
+  {
+    title: "Matric (Maths And Science)",
+    school: "Duck Pond's High School",
+    date: "2016",
+  },
+];  
 
   const ShaperTimeline = [
     {
@@ -168,7 +143,7 @@ const About = () => {
       <div className='about--me--container'>
         {About_me.map((item, index) => (
           <div className='about--me--card' key={`about-me-${index}`}>
-            <div className='description--controller'>
+            <div className='heading-description--controller'>
               Full Stack Developer skilled in React, delivering scalable and user-focused 
               web applications with clean, reusable components. Known for dependability, 
               flexibility, strong problem-solving abilities, and clear communication throughout 
@@ -199,43 +174,6 @@ const About = () => {
               </ul>
             </div>
           </div>
-
-
-              {/* <div className='certificate--and--country--controler'>
-                {Certficates.map((item, index)=>(
-                  <div className='certificate--controller' key={item.id || index}>
-                    <p style={{fontWeight:"bold", fontSize:"1.3rem"}}>{item.name}</p>
-                    <p>{item.cert_Name}</p>
-                    <p>AI Career Essentials</p> 
-                    <Divider/>
-                  </div>
-                ))}
-                {Country.map((item, index)=>(
-                  <div className='country--controller' key={index}>
-                    <p style={{fontWeight:"bold", fontSize:"1.3rem"}}>{item.name}</p>
-                    <p>{item.countyName}</p>
-                    <Divider/>
-                  </div>
-                ))}
-                </div>
-                <div className='github--and--availability--controller'>
-                  {Github.map((item, index)=>(
-                    <div className='github--controller' key={index}>
-                      <p style={{fontWeight:"bold", fontSize:"1.3rem"}}>{item.name}</p>
-                      <Link to={item.link} target="_blank">
-                        <p>{item.GithubName}</p>
-                      </Link>
-                      <Divider/>
-                    </div>
-                    ))}
-                    {Availability.map((item, index)=>(
-                      <div className='availability--controller' key={index}>
-                        <p style={{fontWeight:"bold", fontSize:"1.3rem"}}>{item.name}</p>
-                        <p>{item.status}</p>  
-                        <Divider/> 
-                    </div>
-                  ))}
-                </div>     */}
             </div>
             <div className='button--controller'>
               <Link to="/contact" >
