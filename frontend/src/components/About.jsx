@@ -8,6 +8,8 @@ import { HiAcademicCap } from "react-icons/hi2";
 import Timeline from "./Timelines/Timeline";
 import Exptimeline from "./Timelines/Exptimeline";
 import ThemedIcons from "./theme/ThemedIcon";
+import { FaCode } from "react-icons/fa";
+import { GiSkills } from "react-icons/gi";
 
 const About_me = [
   {
@@ -171,7 +173,6 @@ const About = () => {
               web applications with clean, reusable components. Known for dependability, 
               flexibility, strong problem-solving abilities, and clear communication throughout 
               the development lifecycle.
-              {/* <p>{item.description}</p>     */}
             </div>
           </div>
         ))}
@@ -179,7 +180,12 @@ const About = () => {
           <div className='cards--and--button--controler'>
             <div className='cards--info'>
             <div className="SoftSkills-controller">
-            <div className="softskills-heading">Soft Skills</div>
+            <div className="softskills-heading">
+              <div className='edication--icon'>
+                <GiSkills />
+              </div>
+              Soft Skills
+            </div>
             <div className="list--controller">
               <ul>
                 <li>Dependability</li>
@@ -240,7 +246,12 @@ const About = () => {
             </div> 
           </div>
           <div className="Gauges--wrapper">
-            <div className="Skills--heading">Most Proficiant on: </div>
+            <div className="Skills--heading">
+            <div className='edication--icon'>
+              <FaCode />
+              </div>
+              Core technical skills:
+              </div>
             <div className='Gauges--controller'>
               <div className="python--gauge">
                 <ThemedIcons

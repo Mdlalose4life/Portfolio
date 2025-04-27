@@ -23,7 +23,7 @@ const ScrollWrapper = ({ children }) => {
   const location = useLocation();
   const navigate = useNavigate();
   const scrollTimeout = useRef(null);
-  const scrollDirectionRef = useRef('down'); // Store last scroll direction
+  const scrollDirectionRef = useRef('down');
 
   const routes = ['/', '/about', '/skills', '/portfolio', '/contact'];
 

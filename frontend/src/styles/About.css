@@ -96,9 +96,12 @@
 }
 
 .softskills-heading {
+  display: flex;
+  flex-direction: row;
   font-size: 1.6rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  gap: 6px;
+  /* padding-bottom: 10px; */
 }
 
 .list--controller {
@@ -129,11 +132,14 @@
   padding-top: 1rem;
 }
 
-.Skills--heading{
+.Skills--heading {
+  display: flex;
+  flex-direction: row;
   font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  padding-bottom: 1rem;
+  padding-bottom: 10px;
+  gap: 6px;
 }
 
 .Gauges--controller {
