@@ -1,48 +1,69 @@
 import Divider from '@mui/material/Divider';
 import { CiDesktop } from "react-icons/ci";
-import { SiAzuredevops } from "react-icons/si";
-import { IoCodeSlashSharp } from "react-icons/io5";
-import { FaDatabase } from "react-icons/fa6";
-import { FaPhoenixFramework } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { SiPython, SiJavascript, SiHtml5, SiCss3, SiReact, SiNextdotjs, SiMysql, SiMongodb, SiRedis, SiStrapi, SiLinux, SiPuppet, SiDocker, SiDjango, SiFlask, SiExpress, SiGithub } from "react-icons/si";
 import '../styles/skills.css'
 
 const skills = [
   {
     title: 'Programming Languages',
     icons: <CiDesktop />,
-    des: 'Python, Javascript'
+    des: [
+      { icon: <SiPython />, label: 'Python' },
+      { icon: <SiJavascript />, label: 'JavaScript' },
+    ]
   },
   {
-    title: 'Frotend',
-    icons: <IoCodeSlashSharp />,
-    des: 'HTML, CSS, React and next.js'
+    title: 'Frontend',
+    icons: <SiHtml5 />,
+    des: [
+      { icon: <SiHtml5 />, label: 'HTML' },
+      { icon: <SiCss3 />, label: 'CSS' },
+      { icon: <SiReact />, label: 'React' },
+      { icon: <SiNextdotjs />, label: 'Next.js' },
+    ]
   },
   {
     title: 'Database',
-    icons: <FaDatabase />,
-    des: 'MySQL, Mongodb, Redis, and Strapi'
+    icons: <SiMysql />,
+    des: [
+      { icon: <SiMysql />, label: 'MySQL' },
+      { icon: <SiMongodb />, label: 'MongoDB' },
+      { icon: <SiRedis />, label: 'Redis' },
+      { icon: <SiStrapi />, label: 'Strapi' },
+    ]
   },
   {
-    title: 'Devops',
-    icons: <SiAzuredevops />,
-    des: 'Linux/Unix commands, puppet, and Docker'
+    title: 'DevOps',
+    icons: <SiLinux />,
+    des: [
+      { icon: <SiLinux />, label: 'Linux/' },
+      { icon: <SiPuppet />, label: 'Puppet' },
+      { icon: <SiDocker />, label: 'Docker' },
+    ]
   },
   {
     title: 'Frameworks',
-    icons: <FaPhoenixFramework />,
-    des: 'Django, flask, React, Next.js and Express'
+    icons: <SiDjango />,
+    des: [
+      { icon: <SiDjango />, label: 'Django' },
+      { icon: <SiFlask />, label: 'Flask' },
+      { icon: <SiReact />, label: 'React' },
+      { icon: <SiNextdotjs />, label: 'Next.js' },
+      { icon: <SiExpress />, label: 'Express' },
+    ]
   },
   {
     title: 'Version Control',
-    icons: <FaGithub />,
-    des: 'git and github'
+    icons: <SiGithub />,
+    des: [
+      { icon: <SiGithub />, label: 'Git & GitHub' },
+    ]
   }
-]
+];
 
 const Skills = () => {
   return (
-    <div className='skills--page--tittle'>
+    <div className='skills--page--title'>
       <h1>Skills</h1>
       <Divider />
       <div className='skills--container'>
@@ -52,7 +73,14 @@ const Skills = () => {
             <div className='skills--title'>
               <h5>{item.title}</h5>
             </div>
-            <p className='skills--description'>{item.des}</p>
+            <div className='skills--description'>
+              {item.des.map((skill, idx) => (
+                <div key={idx} className="skill-item">
+                  {skill.icon}
+                  <span style={{ marginLeft: '8px' }}>{skill.label}</span>
+                </div>
+              ))}
+            </div>
           </div>
         ))}
       </div>
@@ -60,4 +88,4 @@ const Skills = () => {
   )
 };
 
-export default Skills
+export default Skills;

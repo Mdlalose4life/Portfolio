@@ -217,6 +217,11 @@ const About = () => {
                   Express
               </div>
             </div>
+            {/* <Link to="/contact" >
+                <Button variant="contained" color="success">
+                    hire me
+                </Button>
+              </Link> */}
           </div>
         </div>
         <div className='education-and-experience'>

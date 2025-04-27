@@ -54,6 +54,9 @@
 }
 
 .skills--description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     position: relative;
     font-size: 14px;
     color: var(--);
@@ -75,3 +78,20 @@
     border-top: 10px solid #C5CAE9;
     transform: translateX(-50%);
 }
+
+.skill-item {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    margin-bottom: 8px;
+    font-size: rem;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    color: var(--SKILLS--BD--Cl);
+  }
+  .skill-item svg {
+    width: 28px;
+    height: 28px;
+  }
+  
