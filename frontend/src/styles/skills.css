@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 2rem;
-    justify-content: center; /* Center nicely */
+    justify-content: center;
 }
 
 .skills {
@@ -72,7 +72,7 @@
     align-items: center;
     font-size: 1rem;
     color: var(--SKILLS--BD--Cl);
-    width: 80px; /* consistent size */
+    width: 80px;
 }
 
 .skill-item svg {

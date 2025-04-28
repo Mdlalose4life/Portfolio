@@ -36,7 +36,7 @@ const skills = [
     title: 'DevOps',
     icons: <SiLinux />,
     des: [
-      { icon: <SiLinux />, label: 'Linux/' },
+      { icon: <SiLinux />, label: 'Linux' },
       { icon: <SiPuppet />, label: 'Puppet' },
       { icon: <SiDocker />, label: 'Docker' },
     ]
@@ -77,7 +77,7 @@ const Skills = () => {
               {item.des.map((skill, idx) => (
                 <div key={idx} className="skill-item">
                   {skill.icon}
-                  <span style={{ marginLeft: '8px' }}>{skill.label}</span>
+                  <span style={{ marginLeft: '8px', marginTop: "8px", display:"flex", justifyContent:"center"}}>{skill.label}</span>
                 </div>
               ))}
             </div>
