@@ -1,6 +1,8 @@
 /* Cards container */
-.skills--page--tittle {
-    color: var(--icons-cl);
+.skills--page--title {
+    & > h1 {
+        color: var(--icons-cl);        
+    }
 }
 
 .skills--container {
@@ -8,13 +10,11 @@
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 2rem;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center; /* Center nicely */
 }
 
 .skills {
-    flex: 3;
-    flex: calc(33.333% - 20px);
+    flex: 1 1 calc(33.333% - 20px);
     background: var(--menu-bg);
     padding: 20px;
     border-radius: 10px;
@@ -22,9 +22,10 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    transition: 0.10s ease-in-out;
+    transition: 0.3s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-left: 8px solid var(--RHS--BD--Cl)
+    border-left: 8px solid var(--RHS--BD--Cl);
+    min-width: 250px;
 }
 
 .skills:hover {
@@ -55,43 +56,51 @@
 
 .skills--description {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    position: relative;
-    font-size: 14px;
-    color: var(--);
-    text-align: center;
+    gap: 10px;
     width: 100%;
     padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
 }
 
-.skills--description::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 0;
-    height: 0;
-    margin-left: -50%;
-    /* border-left: 10px solid transparent; */
-    /* border-right: 10px solid transparent; */
-    border-top: 10px solid #C5CAE9;
-    transform: translateX(-50%);
-}
-
+/* Each small skill */
 .skill-item {
     display: flex;
-    /* align-items: center; */
     flex-direction: column;
-    margin-bottom: 8px;
-    font-size: rem;
     align-items: center;
-    gap: 10px;
-    padding-left: 10px;
+    font-size: 1rem;
     color: var(--SKILLS--BD--Cl);
-  }
-  .skill-item svg {
-    width: 28px;
-    height: 28px;
-  }
-  
+    width: 80px; /* consistent size */
+}
+
+.skill-item svg {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover svg {
+    transform: scale(1.2);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+    .skills {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .skills {
+        flex: 1 1 100%;
+    }
+    .skill-item svg {
+        width: 24px;
+        height: 24px;
+    }
+    .skill-item {
+        width: 60px;
+    }
+}
