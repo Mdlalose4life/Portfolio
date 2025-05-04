@@ -2,7 +2,6 @@ import '../styles/home.css'
 import img from '../assets/Sbu.jpg'
 import { TypeAnimation } from 'react-type-animation';
 import { FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { Link } from 'react-router-dom';
@@ -16,7 +15,6 @@ const profile = [
   {
     image: img,
     name: 'I am Sbusiso Blessing Mdlalose',
-    link: 'https://www.linkedin.com/in/sbusiso-blessing-1894591a0'
   }
 ]
 
@@ -68,18 +66,19 @@ const Home = () => {
                 </div>
                 <div className='icons'>
                   <div className='linkedin--icon'>
-                    <Link to={item.link} target="_blank" style={{ textDecoration: 'none', color: 'inherit'}}>
+                    <Link to="https://www.linkedin.com/in/sbusiso-blessing-1894591a0" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit'}}>
                       <FaLinkedin />               
                     </Link>
                   </div>
-                  <div className='instagram--icon'>
-                    <FaInstagram/>
-                  </div>
                   <div className='facaebook--icon'>
-                  <FaGithub />
+                    <Link to="https://github.com/Mdlalose4life/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit'}}>
+                      <FaGithub />
+                    </Link>
                   </div>
                   <div>
-                  <MdOutlineMailOutline />
+                    <Link to="https://mail.google.com/mail/?view=cm&fs=1&to=&su=&body=&tf=1" rel="noopener noreferrer" target="_blank" style={{ textDecoration: 'none', color: 'inherit'}}>
+                    <MdOutlineMailOutline/>
+                    </Link>
                   </div>
                   <ScrollHint/>
                 </div>
