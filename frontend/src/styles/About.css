@@ -491,3 +491,68 @@
   }
 }
 }
+
+.Gauges--wrapper {
+  animation-duration: 1.10s;
+  animation-name: slide-in-right;
+}
+
+@keyframes slide-in-right {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+.cards--info {
+  animation-duration: 1.10s;
+  animation-name: slide-in-left;
+}
+
+@keyframes slide-in-left {
+  from {
+    translate: -150vw 0;
+    scale: 200% 1;
+  }
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+
+.Expience--title--and--controler {
+  animation-duration: 1s;
+  animation-name: slide-in-right;
+}
+
+@keyframes slide-in-right {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+.Education--tittle--and--card {
+  animation-duration: 1s;
+  animation-name: slide-in-left;
+}
+
+@keyframes slide-in-left {
+  from {
+    translate: -150vw 0;
+    scale: 200% 1;
+  }
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}

@@ -104,3 +104,21 @@
         width: 60px;
     }
 }
+
+.skills--page--title {
+    animation: slide-up 1s ease-out forwards;
+    opacity: 0; /* Start invisible */
+    position: relative;
+  }
+  
+  @keyframes slide-up {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
