@@ -1,6 +1,7 @@
 import Divider from '@mui/material/Divider';
 import { CiDesktop } from "react-icons/ci";
-import { SiPython, SiJavascript, SiHtml5, SiCss3, SiReact, SiNextdotjs, SiMysql, SiMongodb, SiRedis, SiStrapi, SiLinux, SiPuppet, SiDocker, SiDjango, SiFlask, SiExpress, SiGithub } from "react-icons/si";
+import { SiPython, SiJavascript, SiHtml5, SiCss3, SiReact, SiNextdotjs, SiMysql, SiMongodb, SiRedis, SiStrapi, SiLinux, SiPuppet, SiDocker, SiDjango, SiFlask, SiExpress, SiGithub, } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
 import '../styles/skills.css'
 
 const skills = [
@@ -56,7 +57,8 @@ const skills = [
     title: 'Version Control',
     icons: <SiGithub />,
     des: [
-      { icon: <SiGithub />, label: 'Git & GitHub' },
+      { icon: <FaGitAlt />, label: 'Git' },
+      { icon: <SiGithub />, label: 'GitHub' },
     ]
   }
 ];
@@ -77,7 +79,7 @@ const Skills = () => {
               {item.des.map((skill, idx) => (
                 <div key={idx} className="skill-item">
                   {skill.icon}
-                  <span style={{ marginLeft: '8px', marginTop: "8px", display:"flex", justifyContent:"center"}}>{skill.label}</span>
+                  <span>{skill.label}</span>
                 </div>
               ))}
             </div>

@@ -209,12 +209,17 @@ const About = () => {
                 Next.js
               </div>
               <div className='Java--gauge'>
-                <ThemedIcons
-                  tech="express"
-                  size={150}
-                  alt="expess Logo"
-                />
-                  Express
+              <ThemedIcons
+                    tech="express"
+                    size={150}
+                    alt="expess Logo"
+                  />
+                <div className="skill--content">
+                    Express
+                    <Link to="/skills">
+                      (&nbsp;&nbsp;&nbsp;...more)
+                  </Link>
+                </div>
               </div>
             </div>
             {/* <Link to="/contact" >
