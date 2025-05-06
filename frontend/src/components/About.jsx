@@ -254,9 +254,9 @@ const About = () => {
               <h2>Experience</h2>
             </div>
             <div className='experience--card--controller'>
-              <div className='Experience--title'>
+              {/* <div className='Experience--title'>
                 <h3>Junior Full Stack Software Developer</h3>
-              </div>
+              </div> */}
               <div className='vertical-line '>
                 <div className='content'>
                   <div className='componany-name--and--date--controller'>
@@ -264,9 +264,9 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <div className='Experience--title'>
+              {/* <div className='Experience--title'>
                 <h3>Junior Software Developer</h3>
-              </div>
+              </div> */}
               <div className='vertical-line '>
                 <div className='content'>
                   <div className='componany-name--and--date--controller'>
